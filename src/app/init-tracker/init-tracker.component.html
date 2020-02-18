@@ -10,4 +10,17 @@
     <div class="row bg-header mt-2 pl-2 pt-2">
         <h2>Initiative Tracker</h2>
     </div>
+    <div class="row">
+        <select *ngIf="!selectedParty" (change)="selectChangeHandler($event)" class="custom-select" name="" id="tipoDados">
+            <option value="">Escolha uma Party</option>
+            <option value="0">Fahen</option>   
+            <option value="1">Nyaris</option>   
+            <option value="2">Criar Grupo</option>   
+            </select>
+
+    </div>
 </div>
+{{initObj}}
+<!-- <mat-table>
+    
+</mat-table> -->
