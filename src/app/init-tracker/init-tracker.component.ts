@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-init-tracker',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./init-tracker.component.css']
 })
 export class InitTrackerComponent implements OnInit {
-
-  constructor() { }
+  partySelected;
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.apiService.getNews().subscribe((data)=>{
+      console.log(data);
+      this.partySelected = data;
+    });
+
   }
 
 }
