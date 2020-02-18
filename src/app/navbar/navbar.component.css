@@ -1,3 +1,4 @@
-.active {
-    opacity: 0;
+.nav-link.active {
+    border-bottom: 2px solid red;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.6), 3px 3px 5px rgba(255, 255, 255, 0.3);
 }
