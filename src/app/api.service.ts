@@ -9,6 +9,7 @@ export class ApiService {
   // https://api.myjson.com/bins/16ey9k - Lytix
   constructor(private httpClient: HttpClient) { }
   public getNews(){  
+    console.log(this.httpClient.get(`https://api.myjson.com/bins/c1uew`))
     return this.httpClient.get(`https://api.myjson.com/bins/c1uew`);
   }
   public getNewss(){  

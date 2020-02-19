@@ -1,37 +1,93 @@
-<!-- <div *ngFor="let member of partySelected">
-    <h2>{{member.name}}</h2>
-
-    <p>
-        {{member.bonusInit}}
-    </p>
-
-</div> -->
-<div class="content  mx-auto">
-    <div class="row bg-header mt-2 pl-2 pt-2">
-        <h2>Initiative Tracker</h2>
-    </div>
-    <div class="row">
-        <select *ngIf="!selectedParty" (change)="selectChangeHandler($event)" class="custom-select" name="" id="tipoDados">
-            <option value="">Escolha uma Party</option>
-            <option value="0">Fahen</option>   
-            <option value="1">Nyaris</option>   
-            <option value="2">Criar Grupo</option>   
-            </select>
-        <section *ngIf="addNewCharInput" class="d-flex flex-row align-items-center text-light">
-            <label for="">Adicionar personagem</label>
-            <input class="ml-3 mr-3" type="text" [(ngModel)]="addNewChar" placeholder="Nome">
-            <div class="btn-rpg " (click)="addChar()">
-                <i class="fas fa-plus"></i>a
+<div class="container">
+    <div class="col-12 justify-content-center">
+        <div class="row bg-header mt-2 pl-2 pt-2">
+            <h2>Initiative Tracker</h2>
+        </div>
+        <p class="text-light">{{selectedOption}}</p>
+        <div class="row">
+            <div class="col col p-2">
+                <select (change)="selectChangeHandler()" class="custom-select flex-fill" [(ngModel)]="selectedOption" required id="piece" name="piece">
+                    <option selected>Escolha uma Party</option>
+                    <option *ngFor="let option of selectOptions" [value]="option" >
+                        {{option}}
+                      </option>
+                  </select>
+                <!-- <select *ngIf="!selectedParty" (change)="selectChangeHandler($event)" class="custom-select" name="" id="tipoDados">
+                    <option value="">Escolha uma Party</option>
+                    <option value="0">Fahen</option>   
+                    <option value="1">Nyaris</option>   
+                    <option value="2">Criar Grupo</option>   
+                    </select> -->
             </div>
-        </section>
+            <div class="col-12 col-md-6 p-2">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fas fa-user-plus"></i>
+                        </span>
+                    </div>
+                    <input type="text" [(ngModel)]="addNewChar" class="form-control" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class="input-group-prepend">
+                        <button (click)="addChar()" class="btn bg-danger text-white" type="button"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row p-2 ">
+            <div class="col">
+                <mat-table class="lessons-table init-table mat-elevation-z8 bg-dark text-white" [dataSource]="dataSource">
+                    <ng-container matColumnDef="name">
+                        <mat-header-cell class="col" *matHeaderCellDef>Nome</mat-header-cell>
+                        <mat-cell class="col" *matCellDef="let lesson">
+
+                            <h5 class="text-light">{{lesson.name}}</h5>
+                        </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="bonusInit">
+                        <mat-header-cell class="col-2" *matHeaderCellDef>Bonus Init</mat-header-cell>
+                        <mat-cell class="description-cell col-2" *matCellDef="let lesson">
+                            <input type="number" [value]="lesson.bonusInit" [(ngModel)]="lesson.bonusInit" (change)="atualizarTabela()">
+                        </mat-cell>
+
+                    </ng-container>
+
+                    <ng-container matColumnDef="diceInit">
+                        <mat-header-cell class="col-3" *matHeaderCellDef>Dados Init</mat-header-cell>
+                        <mat-cell class="duration-cell col-3" *matCellDef="let lesson;let i = index">
+                            <input type="number" class="w-50" [value]="lesson.diceInit" [(ngModel)]="lesson.diceInit" (change)="atualizarTabela()">
+                            <div class="btn-rpg" (click)="rollDice(i)">
+                                <i class="fas fa-dice"></i>
+                            </div>
+
+                        </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="totalInit">
+                        <mat-header-cell class="col" *matHeaderCellDef>Total init</mat-header-cell>
+                        <mat-cell class="duration-cell col" *matCellDef="let lesson">
+                            <!-- <input type="number" [value]="lesson.totalInit" disabled> -->
+                            <h3 class="text-light">{{lesson.totalInit}}</h3>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container matColumnDef="delete">
+                        <mat-header-cell class=" col-2" *matHeaderCellDef>Eliminar</mat-header-cell>
+                        <mat-cell class="duration-cell col-2" *matCellDef="let lesson;let i = index">
+                            <div class="btn-rpg " (click)="removeChar(i)">
+                                <i class="fas fa-skull"></i>
+                            </div>
+
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row class="turn-css-header" *matHeaderRowDef="displayedColumns"></mat-header-row>
+
+                    <!-- [ngClass]="{'turn-css-select': row.name == initObj[turno].name && started == true}" -->
+                    <mat-row *matRowDef="let row; columns: displayedColumns;let i = index"></mat-row>
+                </mat-table>
+            </div>
+        </div>
+
+
     </div>
 </div>
-<ul>
-    <li class="text-white" *ngFor="let member of selectedParty">
-        {{member.name}},{{member.bonusInit}},{{member.diceInit}},{{member.totalInit}}
-    </li>
-</ul>
-{{selectedParty}}
-<!-- <mat-table>
-    
-</mat-table> -->
