@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
+    background-color: black;
+}
+
 * {
     font-family: 'Alata', sans-serif;
 }
@@ -30,6 +34,44 @@ h5 {
     color: #ff0000;
     -webkit-animation: titleshadow 3s infinite;
     animation: titleshadow 3s infinite;
+}
+
+.bg-table {
+    background-image: url('../src/assets/grunge-metal-red-grunge-texture_1048-4051.jpg');
+    .mat-table {
+        background-color: transparent;
+    }
+    .turn-css-select {
+        background-color: rgba(255, 0, 0, 0.3);
+    }
+    p {
+        font-size: 15px;
+        font-family: 'Trade Winds', cursive;
+    }
+    h3 {
+        font-size: 13px;
+    }
+}
+
+.navbar {
+    background-image: url('../src/assets/blackbg.jpg');
+    background-size: cover;
+    .navbar-brand {
+        font-family: 'Trade Winds', cursive;
+        color: #fff;
+    }
+    .nav-link {
+        color: #fff;
+        transition: all 0.3s;
+        border-bottom: 2px solid transparent;
+    }
+    .nav-link:hover {
+        border-bottom: 2px solid rgba(255, 0, 0, 0.3);
+    }
+    .nav-link.active {
+        border-bottom: 2px solid red;
+        text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.6), 3px 3px 5px rgba(255, 255, 255, 0.3);
+    }
 }
 
 @-webkit-keyframes titleshadow {

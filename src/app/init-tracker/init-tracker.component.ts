@@ -1,12 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
-
-
 import { MatTableDataSource } from '@angular/material/table';
-
-
-import { FAHEN, NYARIS, NEW } from './initiativeGroups';
-
 
 export interface initTable {
   name: string;
@@ -21,9 +15,7 @@ export class initChar {
   totalInit: number = 0;
 }
 
-const ELEMENT_DATA: initTable[] = [
-  // { name: "Nibi", bonusInit: 5, diceInit: 0, totalInit: 0, }
-]
+const ELEMENT_DATA: initTable[] = []
 
 @Component({
   selector: 'app-init-tracker',
@@ -37,6 +29,16 @@ export class InitTrackerComponent implements OnInit {
   addNewChar
   displayedColumns: string[] = ['name', 'bonusInit', 'diceInit', 'totalInit', 'delete'];
   dataSource = new MatTableDataSource<initTable>(ELEMENT_DATA);
+  turno:number = 0  
+  started = false
+  textHover:string
+  btnInit =[
+    {functionBtn: 'start', classFa: 'fa-play', btnName: 'Iniciar Encontro'},
+    {functionBtn: 'prev', classFa: 'fa-angle-left', btnName: 'Anterior'},
+    {functionBtn: 'sortTable', classFa: 'fa-sync-alt', btnName: 'Ordenar Tabela'},
+    {functionBtn: 'next', classFa: 'fa-angle-right', btnName: 'Próximo'},
+    {functionBtn: 'finish', classFa: 'fa-flag', btnName: 'Encerrar Encontro'},
+  ]
   constructor(private apiService: ApiService) { }
 
 
@@ -47,14 +49,14 @@ export class InitTrackerComponent implements OnInit {
   selectChangeHandlers(event: any) {
     if (this.selectedOption == "Fahen") {
       this.apiService.getFahen().subscribe((data: initTable[]) => {
-        console.log(data)
+       
         this.init = data
         this.atualizarTabela()
       });
     }
     else if (this.selectedOption == "Lytix") {
       this.apiService.getLytix().subscribe((data: initTable[]) => {
-        console.log(data)
+       
         this.init = data
         this.atualizarTabela()
       });
@@ -68,18 +70,26 @@ export class InitTrackerComponent implements OnInit {
  
 
   atualizarTabela() {
-    // if(this.init[0].name == ''){
-    //   this.init.splice(0, 1)
-    // }    
-    // for (let i = 0; i < this.init.length; i++) {
-    //   this.init[i].totalInit = this.init[i].bonusInit + this.init[i].diceInit
-    // }    
+    if(this.init[0].name == ''){
+      this.init.splice(0, 1)
+    }    
+    for (let i = 0; i < this.init.length; i++) {
+      this.init[i].totalInit = this.init[i].bonusInit + this.init[i].diceInit
+    }    
     this.dataSource = new MatTableDataSource<initTable>(this.init);
   }
 
-
-  ordenarTabela() {
-
+  sortTable() {
+    this.init.sort(function (a, b) {
+      if (a.totalInit > b.totalInit) {
+        return -1;
+      }
+      if (a.totalInit < b.totalInit) {
+        return 1;
+      }
+      return 0;
+    });    
+    this.atualizarTabela()
   }
   removeChar(i) {
     this.init.splice(i, 1)    
@@ -99,20 +109,42 @@ export class InitTrackerComponent implements OnInit {
     this.atualizarTabela()
   }
   start() {
-
+    this.sortTable()
+    this.started = true       
+    this.turno = 0
+    this.displayedColumns = ['name',  'totalInit', 'delete'];
   }
   next() {
-
+    if(this.turno < this.init.length-1){
+      this.turno = this.turno+1
+    } else{
+      this.turno = 0
+    }    
+    console.log(this.init[this.turno].name)
+    this.sortTable()
   }
   prev() {
+    if(this.turno < 1){
+      this.turno = this.init.length-1
+    } else{
+      this.turno = this.turno-1
+    }
 
-
+  }
+  btnFunction(e){
+    switch(e){
+      case 'start':this.start();break;
+      case 'prev':this.prev();break;
+      case 'sortTable':this.sortTable();break;
+      case 'next':this.next();break;
+      case 'finish':this.finish();break;
+    }
   }
   finish() {
-
+    this.selectedOption = undefined
+    this.init = undefined   
+    this.dataSource = new MatTableDataSource<initTable>(ELEMENT_DATA);
+    this.started = false
+    this.displayedColumns = ['name', 'bonusInit', 'diceInit', 'totalInit', 'delete'];
   }
 }
-
-
-
-
