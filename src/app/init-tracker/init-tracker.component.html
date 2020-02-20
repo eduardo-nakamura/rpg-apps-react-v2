@@ -1,130 +1,130 @@
 <div class="container">
-    <div class="col-12 justify-content-center">
-        <div class="row bg-header mt-2 pl-2 pt-2">
-            <h2>Initiative Tracker</h2>
-        </div>
-        <div class="row">
-            <div class="col col p-2">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend ">
-                        <label class="input-group-text bg-danger text-white" for="inputGroupSelect01">Escolha uma Party</label>
-                    </div>
-                    <select (change)="selectChangeHandlers($event)" [(ngModel)]="selectedOption" class="custom-select bg-dark text-light" id="inputGroupSelect01">
+
+    <div class="row bg-header mt-2 pl-2 pt-2">
+        <h2>Initiative Tracker</h2>
+    </div>
+    <div class="row">
+        <div class="col col p-2">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend ">
+                    <label class="input-group-text bg-danger text-white" for="inputGroupSelect01">Escolha uma Party</label>
+                </div>
+                <select (change)="selectChangeHandlers($event)" [(ngModel)]="selectedOption" class="custom-select bg-dark text-light" id="inputGroupSelect01">
                         <option *ngFor="let option of selectOptions" [value]="option" >
                             {{option}}
                           </option>
                     </select>
-                </div>
-
-
             </div>
-            <div class="col-12 col-md-6 p-2">
-                <div class="input-group mb-3  text-white">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text bg-danger text-white" id="basic-addon1">
+
+
+        </div>
+        <div class="col-12 col-md-6 p-2">
+            <div class="input-group mb-3  text-white">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-danger text-white" id="basic-addon1">
                             <i class="fas fa-user-plus"></i>
                         </span>
-                    </div>
-                    <input type="text" [(ngModel)]="addNewChar" class="form-control bg-dark text-white" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
-                    <div class="input-group-prepend">
-                        <button (click)="addChar()" class="btn bg-danger text-white" type="button"><i class="fas fa-plus"></i></button>
-                    </div>
+                </div>
+                <input type="text" [(ngModel)]="addNewChar" class="form-control bg-dark text-white" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
+                <div class="input-group-prepend">
+                    <button (click)="addChar()" class="btn bg-danger text-white" type="button"><i class="fas fa-plus"></i></button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="bg-table">
-            <div class="row ">
-                <mat-table class="w-100  text-white mt-2 mb-2" [dataSource]="dataSource">
-                    <ng-container matColumnDef="name">
-                        <mat-header-cell class="col" *matHeaderCellDef>
-                            <p class="text-light">Nome</p>
-                        </mat-header-cell>
-                        <mat-cell class="col" *matCellDef="let lesson">
-                            <h3 class="text-light">{{lesson.name}}</h3>
-                        </mat-cell>
-                    </ng-container>
+    <div class="bg-table">
+        <div class="row ">
+            <mat-table class="w-100  text-white mt-2 mb-2" [dataSource]="dataSource">
+                <ng-container matColumnDef="name">
+                    <mat-header-cell class="col" *matHeaderCellDef>
+                        <p class="text-light">Nome</p>
+                    </mat-header-cell>
+                    <mat-cell class="col" *matCellDef="let lesson">
+                        <h3 class="text-light">{{lesson.name}}</h3>
+                    </mat-cell>
+                </ng-container>
 
-                    <ng-container matColumnDef="bonusInit">
-                        <mat-header-cell class="col-2" *matHeaderCellDef>
-                            <p class="text-light">Bonus Init</p>
-                        </mat-header-cell>
-                        <mat-cell class="description-cell col-2" *matCellDef="let lesson">
-                            <!-- <input type="number" [value]="lesson.bonusInit" [(ngModel)]="lesson.bonusInit" (change)="atualizarTabela()"> -->
-                            <div class="input-group">
+                <ng-container matColumnDef="bonusInit">
+                    <mat-header-cell class="col-2" *matHeaderCellDef>
+                        <p class="text-light">Bonus Init</p>
+                    </mat-header-cell>
+                    <mat-cell class="description-cell col-2" *matCellDef="let lesson">
+                        <!-- <input type="number" [value]="lesson.bonusInit" [(ngModel)]="lesson.bonusInit" (change)="atualizarTabela()"> -->
+                        <div class="input-group">
 
-                                <input type="number" class="form-control" placeholder="Bonus" aria-label="Bonus" aria-describedby="basic-addon1" [value]="lesson.bonusInit" [(ngModel)]="lesson.bonusInit" (change)="atualizarTabela()">
-                            </div>
-                        </mat-cell>
+                            <input type="number" class="form-control" placeholder="Bonus" aria-label="Bonus" aria-describedby="basic-addon1" [value]="lesson.bonusInit" [(ngModel)]="lesson.bonusInit" (change)="atualizarTabela()">
+                        </div>
+                    </mat-cell>
 
-                    </ng-container>
+                </ng-container>
 
-                    <ng-container matColumnDef="diceInit">
-                        <mat-header-cell class="col-3" *matHeaderCellDef>
-                            <p class="text-light">
-                                Dados Init
-                            </p>
-                        </mat-header-cell>
-                        <mat-cell class="duration-cell col-3" *matCellDef="let lesson;let i = index">
-                            <!-- <input type="number"  [value]="lesson.diceInit" [(ngModel)]="lesson.diceInit" (change)="atualizarTabela()">
+                <ng-container matColumnDef="diceInit">
+                    <mat-header-cell class="col-3" *matHeaderCellDef>
+                        <p class="text-light">
+                            Dados Init
+                        </p>
+                    </mat-header-cell>
+                    <mat-cell class="duration-cell col-3" *matCellDef="let lesson;let i = index">
+                        <!-- <input type="number"  [value]="lesson.diceInit" [(ngModel)]="lesson.diceInit" (change)="atualizarTabela()">
                             <div class="btn bg-danger text-white" (click)="rollDice(i)">
                                 <i class="fas fa-dice"></i>
                             </div> -->
-                            <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Dados" aria-label="Dados" aria-describedby="basic-addon2" [value]="lesson.diceInit" [(ngModel)]="lesson.diceInit" (change)="atualizarTabela()">
-                                <div class="input-group-append">
-                                    <button class="btn bg-danger text-white" (click)="rollDice(i)" type="button"> <i class="fas fa-dice"></i></button>
-                                </div>
+                        <div class="input-group">
+                            <input type="number" class="form-control" placeholder="Dados" aria-label="Dados" aria-describedby="basic-addon2" [value]="lesson.diceInit" [(ngModel)]="lesson.diceInit" (change)="atualizarTabela()">
+                            <div class="input-group-append">
+                                <button class="btn bg-danger text-white" (click)="rollDice(i)" type="button"> <i class="fas fa-dice"></i></button>
                             </div>
-                        </mat-cell>
-                    </ng-container>
+                        </div>
+                    </mat-cell>
+                </ng-container>
 
-                    <ng-container matColumnDef="totalInit">
-                        <mat-header-cell class="col" *matHeaderCellDef>
-                            <p class="text-light">Total init</p>
-                        </mat-header-cell>
-                        <mat-cell class="duration-cell col" *matCellDef="let lesson">
-                            <!-- <input type="number" [value]="lesson.totalInit" disabled> -->
-                            <h3 class="text-light">{{lesson.totalInit}}</h3>
-                        </mat-cell>
-                    </ng-container>
-                    <ng-container matColumnDef="delete">
-                        <mat-header-cell class=" col-2" *matHeaderCellDef>
-                            <p class="text-light">Eliminar</p>
-                        </mat-header-cell>
-                        <mat-cell class="duration-cell col-2" *matCellDef="let lesson;let i = index">
+                <ng-container matColumnDef="totalInit">
+                    <mat-header-cell class="col" *matHeaderCellDef>
+                        <p class="text-light">Total init</p>
+                    </mat-header-cell>
+                    <mat-cell class="duration-cell col" *matCellDef="let lesson">
+                        <!-- <input type="number" [value]="lesson.totalInit" disabled> -->
+                        <h3 class="text-light">{{lesson.totalInit}}</h3>
+                    </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="delete">
+                    <mat-header-cell class=" col-2" *matHeaderCellDef>
+                        <p class="text-light">Eliminar</p>
+                    </mat-header-cell>
+                    <mat-cell class="duration-cell col-2" *matCellDef="let lesson;let i = index">
 
-                            <div class="input-group">
+                        <div class="input-group">
 
-                                <div class="input-group-append">
-                                    <button class="btn bg-danger text-white" type="button" (click)="removeChar(i)"><i class="fas fa-skull"></i></button>
-                                </div>
+                            <div class="input-group-append">
+                                <button class="btn bg-danger text-white" type="button" (click)="removeChar(i)"><i class="fas fa-skull"></i></button>
                             </div>
+                        </div>
 
 
-                        </mat-cell>
-                    </ng-container>
+                    </mat-cell>
+                </ng-container>
 
-                    <mat-header-row class="turn-css-header" *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-header-row class="turn-css-header" *matHeaderRowDef="displayedColumns"></mat-header-row>
 
-                    <mat-row class="d-flex align-items-center" [ngClass]="{'turn-css-select': row.name == init[turno].name && started == true}" *matRowDef="let row; columns: displayedColumns;let i = index"></mat-row>
-                </mat-table>
-            </div>
-            <div class="row pb-2 pl-2">
-                <div class="col d-flex justify-content-between">
-                    <button *ngFor="let btn of btnInit" (click)="btnFunction(btn.functionBtn)" class="btn bg-danger text-white" (mouseenter)="textHover=btn.btnName" (mouseleave)="textHover=''">
+                <mat-row class="d-flex align-items-center" [ngClass]="{'turn-css-select': row.name == init[turno].name && started == true}" *matRowDef="let row; columns: displayedColumns;let i = index"></mat-row>
+            </mat-table>
+        </div>
+        <div class="row pb-2 pl-2">
+            <div class="col d-flex justify-content-between">
+                <button *ngFor="let btn of btnInit" (click)="btnFunction(btn.functionBtn)" class="btn bg-danger text-white" (mouseenter)="textHover=btn.btnName" (mouseleave)="textHover=''">
                         <i [ngClass]="btn.classFa" class="fas"></i>                    
                     </button>
-                </div>
-                <div class="col">
-                    <h3 class="text-light">
-                        {{textHover}}
-                    </h3>
-                </div>
             </div>
-
+            <div class="col">
+                <h3 class="text-light">
+                    {{textHover}}
+                </h3>
+            </div>
         </div>
 
-
     </div>
+
+
+
 </div>
