@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  parentExample: string = "teste"
   menuContent = [
     {router: 'dice-roller', title: 'Dice Roller',class:'fa-dice'},
     {router: 'init-tracker', title: 'Initiative Tracker',class:'fa-hourglass-half'},
@@ -20,9 +21,9 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    sessionStorage.setItem('languageSet',this.languages[0]);
+    localStorage.setItem('languageSet',this.languages[0]);
   }
   selLanguage(event: any){    
-    sessionStorage.setItem('languageSet',event.target.value);
+    localStorage.setItem('languageSet',event.target.value);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ApiService } from '../api.service';
 import { MatTableDataSource } from '@angular/material/table';
 
@@ -23,6 +23,8 @@ const ELEMENT_DATA: initTable[] = []
   styleUrls: ['./init-tracker.component.css']
 })
 export class InitTrackerComponent implements OnInit {
+  @Input() childExample: string;
+
   public selectOptions = ['Fahen', 'Lytix', 'Novo'];
   langSelected:number = 1
   init: initTable[]
@@ -65,9 +67,9 @@ export class InitTrackerComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
 
-  ngOnInit() {
+  ngOnInit() {    
     this.init = []
-    switch(sessionStorage.getItem('languageSet')){
+    switch(localStorage.getItem('languageSet')){
       case 'English':this.langSelected = 0;break;
       case 'Português':this.langSelected = 1;break;
     }
