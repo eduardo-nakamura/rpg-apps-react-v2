@@ -14,4 +14,8 @@ export class ApiService {
   public getLytix(){  
     return this.httpClient.get(`https://api.myjson.com/bins/16ey9k`);
   }
+  public getGameHooks(){  
+    return this.httpClient.get(`https://api.myjson.com/bins/ercis`);
+  }
+
 }

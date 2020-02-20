@@ -1,6 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+//Geral
+.bg-table {
+    background-image: url('../src/assets/grunge-metal-red-grunge-texture_1048-4051.jpg');
+    background-size: cover;
+    .mat-table {
+        background-color: transparent;
+    }
+    .turn-css-select {
+        background: rgb(255, 0, 0);
+        background: linear-gradient(90deg, rgba(255, 0, 0, 0) 10%, rgba(255, 0, 0, 0.3) 50%, rgba(255, 0, 0, 0) 90%);
+    }
+    p {
+        font-size: 15px;
+        font-family: 'Trade Winds', cursive;
+    }
+    h3 {
+        font-size: 13px;
+    }
+}
+
 body {
     background-color: black;
 }
@@ -34,23 +54,6 @@ h5 {
     color: #ff0000;
     -webkit-animation: titleshadow 3s infinite;
     animation: titleshadow 3s infinite;
-}
-
-.bg-table {
-    background-image: url('../src/assets/grunge-metal-red-grunge-texture_1048-4051.jpg');
-    .mat-table {
-        background-color: transparent;
-    }
-    .turn-css-select {
-        background-color: rgba(255, 0, 0, 0.3);
-    }
-    p {
-        font-size: 15px;
-        font-family: 'Trade Winds', cursive;
-    }
-    h3 {
-        font-size: 13px;
-    }
 }
 
 .navbar {
@@ -97,3 +100,25 @@ h5 {
         text-shadow: 0px 0px 5px rgba(255, 0, 0, 1);
     }
 }
+
+//Geral Fim
+//GameHooks
+.bg-hook {
+    background-image: url('../src/assets/0047-old-parchment-paper-texture-seamless-hr.jpg');
+    color: #2c1a05;
+    transform: rotate(-0.5deg) skewX(3deg);
+}
+
+.fontes {
+    color: #fff;
+}
+
+.fontes a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.fontes a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+//GameHooks Fim

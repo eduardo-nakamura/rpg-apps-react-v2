@@ -13,9 +13,16 @@ export class NavbarComponent implements OnInit {
     {router: 'loot-generator', title: 'Loot Generator',class:'fa-coins'},
     {router: 'npc-generator', title: 'NPC Generator',class:'fa-users'}
   ]
+  languages = [
+    "English","Português"
+  ]
+  public selectedLanguage:string
   constructor() { }
 
   ngOnInit(): void {
+    sessionStorage.setItem('languageSet',this.languages[0]);
   }
-
+  selLanguage(event: any){    
+    sessionStorage.setItem('languageSet',event.target.value);
+  }
 }

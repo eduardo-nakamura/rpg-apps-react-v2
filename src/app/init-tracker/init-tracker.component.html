@@ -1,13 +1,13 @@
 <div class="container">
 
     <div class="row bg-header mt-2 pl-2 pt-2">
-        <h2>Initiative Tracker</h2>
+        <h2>{{lang[langSelected].titl}}</h2>
     </div>
     <div class="row">
         <div class="col col p-2">
             <div class="input-group mb-3">
                 <div class="input-group-prepend ">
-                    <label class="input-group-text bg-danger text-white" for="inputGroupSelect01">Escolha uma Party</label>
+                    <label class="input-group-text bg-danger text-white" for="inputGroupSelect01">{{lang[langSelected].partySelect}}</label>
                 </div>
                 <select (change)="selectChangeHandlers($event)" [(ngModel)]="selectedOption" class="custom-select bg-dark text-light" id="inputGroupSelect01">
                         <option *ngFor="let option of selectOptions" [value]="option" >
@@ -38,7 +38,7 @@
             <mat-table class="w-100  text-white mt-2 mb-2" [dataSource]="dataSource">
                 <ng-container matColumnDef="name">
                     <mat-header-cell class="col" *matHeaderCellDef>
-                        <p class="text-light">Nome</p>
+                        <p class="text-light">{{lang[langSelected].nameMember}}</p>
                     </mat-header-cell>
                     <mat-cell class="col" *matCellDef="let lesson">
                         <h3 class="text-light">{{lesson.name}}</h3>
@@ -47,7 +47,7 @@
 
                 <ng-container matColumnDef="bonusInit">
                     <mat-header-cell class="col-2" *matHeaderCellDef>
-                        <p class="text-light">Bonus Init</p>
+                        <p class="text-light">{{lang[langSelected].bonus}}</p>
                     </mat-header-cell>
                     <mat-cell class="description-cell col-2" *matCellDef="let lesson">
                         <!-- <input type="number" [value]="lesson.bonusInit" [(ngModel)]="lesson.bonusInit" (change)="atualizarTabela()"> -->
@@ -62,7 +62,7 @@
                 <ng-container matColumnDef="diceInit">
                     <mat-header-cell class="col-3" *matHeaderCellDef>
                         <p class="text-light">
-                            Dados Init
+                            {{lang[langSelected].dice}}
                         </p>
                     </mat-header-cell>
                     <mat-cell class="duration-cell col-3" *matCellDef="let lesson;let i = index">
@@ -81,7 +81,7 @@
 
                 <ng-container matColumnDef="totalInit">
                     <mat-header-cell class="col" *matHeaderCellDef>
-                        <p class="text-light">Total init</p>
+                        <p class="text-light">{{lang[langSelected].total}}</p>
                     </mat-header-cell>
                     <mat-cell class="duration-cell col" *matCellDef="let lesson">
                         <!-- <input type="number" [value]="lesson.totalInit" disabled> -->
@@ -90,7 +90,7 @@
                 </ng-container>
                 <ng-container matColumnDef="delete">
                     <mat-header-cell class=" col-2" *matHeaderCellDef>
-                        <p class="text-light">Eliminar</p>
+                        <p class="text-light">{{lang[langSelected].elim}}</p>
                     </mat-header-cell>
                     <mat-cell class="duration-cell col-2" *matCellDef="let lesson;let i = index">
 
@@ -112,7 +112,10 @@
         </div>
         <div class="row pb-2 pl-2">
             <div class="col d-flex justify-content-between">
-                <button *ngFor="let btn of btnInit" (click)="btnFunction(btn.functionBtn)" class="btn bg-danger text-white" (mouseenter)="textHover=btn.btnName" (mouseleave)="textHover=''">
+                <button [disabled]="started" (click)="start()" class="btn bg-danger text-white" (mouseenter)="textHover='Iniciar Encontro'" (mouseleave)="textHover=''">
+                    <i class="fas fa-play"></i>   
+                </button>
+                <button [disabled]="!started" *ngFor="let btn of btnInit" (click)="btnFunction(btn.functionBtn)" class="btn bg-danger text-white" (mouseenter)="textHover=btn.btnName" (mouseleave)="textHover=''">
                         <i [ngClass]="btn.classFa" class="fas"></i>                    
                     </button>
             </div>

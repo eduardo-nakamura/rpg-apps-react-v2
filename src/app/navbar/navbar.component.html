@@ -14,8 +14,16 @@
                     <i class="fas " [ngClass]="item.class "></i> {{item.title}}
                 </a>
             </li>
-
-
+            <form class="form-inline">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-danger text-white" id="basic-addon1"><i class="fas fa-language"></i></span>
+                    </div>
+                    <select (change)="selLanguage($event)">                        
+                        <option *ngFor="let sel of languages" [value]="sel">{{sel}}</option>
+                    </select>
+                </div>
+            </form>
         </ul>
 
     </div>

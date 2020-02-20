@@ -24,6 +24,7 @@ const ELEMENT_DATA: initTable[] = []
 })
 export class InitTrackerComponent implements OnInit {
   public selectOptions = ['Fahen', 'Lytix', 'Novo'];
+  langSelected:number = 1
   init: initTable[]
   selectedOption
   addNewChar
@@ -32,31 +33,56 @@ export class InitTrackerComponent implements OnInit {
   turno:number = 0  
   started = false
   textHover:string
+  lang = [
+    
+      {  
+        titl: "Initiative Tracker",
+        partySelect: "Choose a Party",
+        nameMember: "Name",
+        bonus: "Bonus Init",
+        dice: "Dice Init",
+        total: "Total Init",
+        elim: "Remove"
+      },
+      {  
+        titl: "Calculo de Iniciativa",
+        partySelect: "Escolha um Grupo",
+        nameMember: "Nome",
+        bonus: "Bonus Init",
+        dice: "Dados Init",
+        total: "Total Init",
+        elim: "Eliminar"
+      }
+  ]
+
   btnInit =[
-    {functionBtn: 'start', classFa: 'fa-play', btnName: 'Iniciar Encontro'},
+    // {functionBtn: 'start', classFa: 'fa-play', btnName: 'Iniciar Encontro'},
     {functionBtn: 'prev', classFa: 'fa-angle-left', btnName: 'Anterior'},
     {functionBtn: 'sortTable', classFa: 'fa-sync-alt', btnName: 'Ordenar Tabela'},
     {functionBtn: 'next', classFa: 'fa-angle-right', btnName: 'Próximo'},
-    {functionBtn: 'finish', classFa: 'fa-flag', btnName: 'Encerrar Encontro'},
+    {functionBtn: 'finish', classFa: 'fa-flag', btnName: 'Encerrar Encontro'}
   ]
   constructor(private apiService: ApiService) { }
 
 
   ngOnInit() {
     this.init = []
+    switch(sessionStorage.getItem('languageSet')){
+      case 'English':this.langSelected = 0;break;
+      case 'Português':this.langSelected = 1;break;
+    }
+    // if(sessionStorage.getItem('languageSet') == "English")
   }
 
   selectChangeHandlers(event: any) {
     if (this.selectedOption == "Fahen") {
-      this.apiService.getFahen().subscribe((data: initTable[]) => {
-       
+      this.apiService.getFahen().subscribe((data: initTable[]) => {       
         this.init = data
         this.atualizarTabela()
       });
     }
     else if (this.selectedOption == "Lytix") {
-      this.apiService.getLytix().subscribe((data: initTable[]) => {
-       
+      this.apiService.getLytix().subscribe((data: initTable[]) => {       
         this.init = data
         this.atualizarTabela()
       });
@@ -64,11 +90,8 @@ export class InitTrackerComponent implements OnInit {
     else {
       this.init = []
       this.atualizarTabela()
-    }
-    
-  }
- 
-
+    }    
+  } 
   atualizarTabela() {
     if(this.init[0].name == ''){
       this.init.splice(0, 1)
@@ -119,8 +142,7 @@ export class InitTrackerComponent implements OnInit {
       this.turno = this.turno+1
     } else{
       this.turno = 0
-    }    
-    console.log(this.init[this.turno].name)
+    }        
     this.sortTable()
   }
   prev() {
