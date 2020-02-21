@@ -5,6 +5,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatSortModule} from '@angular/material/sort';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -25,8 +26,11 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatPaginatorModule,
     MatProgressSpinnerModule,
     MatSortModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })

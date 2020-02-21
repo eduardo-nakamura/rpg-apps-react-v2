@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { DiceRollerRoutingModule } from './dice-roller-routing.module';
 import { DiceRollerComponent } from './dice-roller.component';
@@ -9,7 +10,9 @@ import { DiceRollerComponent } from './dice-roller.component';
   declarations: [DiceRollerComponent],
   imports: [
     CommonModule,
-    DiceRollerRoutingModule
+    DiceRollerRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class DiceRollerModule { }
