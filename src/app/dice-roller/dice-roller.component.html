@@ -2,15 +2,39 @@
     <div class="row bg-header mt-2 pl-2 pt-2">
         <h2>Dice Roller</h2>
     </div>
-    <div class="row bg-white">
-        <div class="col-3 col-lg" (click)="showD4 = !showD4">d4</div>
-        <div class="col-3 col-lg" (click)="showD6 = !showD6">d6</div>
-        <div class="col-3 col-lg" (click)="showD8 = !showD8">d8</div>
-        <div class="col-3 col-lg" (click)="showD10 = !showD10">d10</div>
-        <div class="col-3 col-lg" (click)="showD12 = !showD12">d12</div>
-        <div class="col-3 col-lg" (click)="showD20 = !showD20">d20</div>
-        <div class="col-3 col-lg" (click)="showD100 = !showD100">d100</div>
-        <div class="col-3 col-lg" (click)="showDCustom = !showDCustom">Custom</div>
+    <div class="row">
+        <div class="col-3 col-lg text-center" (click)="showD4 = !showD4">
+            <img src="assets/d4.svg" title="D4" alt="D4">
+            <span class="badge badge-secondary">D4</span>
+        </div>
+        <div class="col-3 col-lg text-center" (click)="showD6 = !showD6">
+            <img src="assets/d6.svg" title="D6" alt="D6">
+            <span class="badge badge-secondary">D6</span>
+        </div>
+        <div class="col-3 col-lg text-center" (click)="showD8 = !showD8">
+            <img src="assets/d8.svg" title="D8" alt="D8">
+            <span class="badge badge-secondary">D8</span>
+        </div>
+        <div class="col-3 col-lg text-center" (click)="showD10 = !showD10">
+            <img src="assets/d10.svg" title="D10" alt="D10">
+            <span class="badge badge-secondary">D10</span>
+        </div>
+        <div class="col-3 col-lg text-center" (click)="showD12 = !showD12">
+            <img src="assets/d12.svg" title="D12" alt="D12">
+            <span class="badge badge-secondary">D12</span>
+        </div>
+        <div class="col-3 col-lg text-center" (click)="showD20 = !showD20">
+            <img src="assets/d20.svg" title="D20" alt="D20">
+            <span class="badge badge-secondary">D20</span>
+        </div>
+        <div class="col-3 col-lg text-center" (click)="showD100 = !showD100">
+            <img src="assets/d100.svg" title="Custom" alt="Custom">
+            <span class="badge badge-secondary">D100</span>
+        </div>
+        <div class="col-3 col-lg text-center" (click)="showDCustom = !showDCustom">
+            <img src="assets/dcustom.svg" title="Custom" alt="Custom">
+            <span class="badge badge-secondary">PERSONALIZADO</span>
+        </div>
     </div>
     <div class="p-2">
         <form [formGroup]="dices">

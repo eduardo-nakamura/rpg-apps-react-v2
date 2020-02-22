@@ -14,7 +14,7 @@ export class diceResult {
   styleUrls: ['./dice-roller.component.css']
 })
 export class DiceRollerComponent implements OnInit {
-  showD4:boolean = true;showD6:boolean = true;showD8:boolean = true;showD10:boolean = true;showD12:boolean = true;showD20:boolean = true;showD100:boolean = true;showDCustom:boolean = true  
+  showD4:boolean;showD6:boolean;showD8:boolean;showD10:boolean;showD12:boolean;showD20:boolean;showD100:boolean;showDCustom:boolean  
   diceHist = []
   diceRoll = []
   dices;
