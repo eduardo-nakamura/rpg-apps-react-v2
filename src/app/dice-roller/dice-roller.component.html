@@ -101,9 +101,7 @@
                 </div>
             </div>
         </form>
-        <p>
-            bonus{{dices.value.dCustom | json}}
-        </p>
+    
     </div>
     <div class="row">
         <button class="btn col mr-2 btn-danger" (click)="rollDiceResults()">
@@ -119,7 +117,7 @@
     <div class="row">
         <ul class="text-white">
             <li *ngFor="let roll of diceRoll">
-                {{roll.result.length}}d{{roll.side}} {{roll.bonus > 0 ? '+' : ''}} {{roll.bonus > 0 ? roll.bonus : ''}} | {{roll.result.join(' + ')}} {{roll.bonus > 0 ? '+' : ''}} {{roll.bonus > 0 ? roll.bonus : ''}} = <span class="bg-success text-white">{{roll.sum}}</span>
+                {{roll.result.length}}d{{roll.side}} {{roll.bonus > 0 ? '+' : ''}} {{roll.bonus > 0 ? roll.bonus : ''}} | {{roll.result.join(' + ')}} {{roll.bonus > 0 ? '+' : ''}} {{roll.bonus > 0 ? roll.bonus : ''}} = <span class="bg-success pl-2 pr-2 text-white">{{roll.sum}}</span>
             </li>
         </ul>
     </div>
@@ -130,7 +128,7 @@
     <div class="row">
         <ul class="text-white">
             <li *ngFor="let roll of diceHist">
-                {{roll.result.length}}d{{roll.side}} {{roll.bonus > 0 ? '+' : ''}} {{roll.bonus > 0 ? roll.bonus : ''}} | {{roll.result.join(' + ')}} {{roll.bonus > 0 ? '+' : ''}} {{roll.bonus > 0 ? roll.bonus : ''}} = <span class="bg-success text-white">{{roll.sum}}</span>
+                {{roll.result.length}}d{{roll.side}} {{roll.bonus > 0 ? '+' : ''}} {{roll.bonus > 0 ? roll.bonus : ''}} | {{roll.result.join(' + ')}} {{roll.bonus > 0 ? '+' : ''}} {{roll.bonus > 0 ? roll.bonus : ''}} = <span class="bg-success pl-2 pr-2 text-white">{{roll.sum}}</span>
             </li>
         </ul>
     </div>

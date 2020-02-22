@@ -60,7 +60,7 @@ export class DiceRollerComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  rollDiceResults(){    
+  rollDiceResults(){   
     this.diceRoll = []    
     Object.keys(this.dices.value).forEach(key => {      
       if (this.dices.value[key].quant != ''){
@@ -84,11 +84,44 @@ export class DiceRollerComponent implements OnInit {
       }    
       
     });     
-    // this.dices.reset()    
-    console.log(this.diceRoll)
-    // console.log(this.dices.value)
-    // this.dices.reset("")
-    // console.log(this.dices.value)
+    this.resetForm()    
+  }
+  resetForm(){
+    this.dices = new FormGroup({
+      d4: new FormGroup({      
+        quant: new FormControl(''),
+        bonus: new FormControl('')
+      }),
+      d6: new FormGroup({
+        quant: new FormControl(''),
+        bonus: new FormControl('')
+      }),
+      d8: new FormGroup({
+        quant: new FormControl(''),
+        bonus: new FormControl('')
+      }),
+      d10: new FormGroup({
+        quant: new FormControl(''),
+        bonus: new FormControl('')
+      }),
+      d12: new FormGroup({
+        quant: new FormControl(''),
+        bonus: new FormControl('')
+      }),
+      d20: new FormGroup({
+        quant: new FormControl(''),
+        bonus: new FormControl('')
+      }),
+      d100: new FormGroup({
+        quant: new FormControl(''),
+        bonus: new FormControl('')
+      }),
+      dCustom: new FormGroup({
+        quant: new FormControl(''),
+        sides: new FormControl(''),
+        bonus: new FormControl('')
+      }),
+    });
   }
   resetHistory(){   
     this.diceHist = []
