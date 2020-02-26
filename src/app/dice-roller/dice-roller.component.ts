@@ -58,7 +58,7 @@ export class DiceRollerComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+
   }
   rollDiceResults(){   
     this.diceRoll = []    
@@ -73,14 +73,14 @@ export class DiceRollerComponent implements OnInit {
         rollDiceStats = rollDiceStats.map(() => (this.rollDice(dRolling.side,1)));           
         dRolling.result = rollDiceStats            
         dRolling.bonus = parseInt(this.dices.value[key].bonus)
-        console.log(isNaN(dRolling.bonus))
+        
         if(isNaN(dRolling.bonus)){
           dRolling.sum = rollDiceStats.reduce((total, num) => total + num,0) 
         } else {
           dRolling.sum = rollDiceStats.reduce((total, num) => total + num,0)+ dRolling.bonus
         }        
-        this.diceHist.push(dRolling)
-        this.diceRoll.push(dRolling)           
+        this.diceHist.unshift(dRolling)
+        this.diceRoll.unshift(dRolling)           
       }    
       
     });     
@@ -122,11 +122,12 @@ export class DiceRollerComponent implements OnInit {
         bonus: new FormControl('')
       }),
     });
+    this.showD4 = false;this.showD6 = false;this.showD8 = false;this.showD10 = false;this.showD12 = false;this.showD20 = false;this.showD100 = false;this.showDCustom = false  
   }
   resetHistory(){   
     this.diceHist = []
     this.diceRoll = []
-    console.log(this.diceRoll,this.diceHist)
+    
   }
   rollDice(max, min) {
     min = Math.ceil(min);

@@ -1,1 +1,49 @@
-<p>loot-generator works!</p>
+<div class="container">
+    <div class="row bg-header mt-2 pl-2 pt-2">
+        <h2>Loot Generator</h2>
+    </div>
+    <div class="row">
+        <h3 class="text-white">1. Determine o tipo e nível do encontro</h3>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="text-white">Tesouro individual</p>
+        </div>
+        <div class="col">
+            <button class="btn btn-danger w-100" (click)="genLoot(1)">0-4</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-danger w-100" (click)="genLoot(2)">5-10</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-danger w-100" (click)="genLoot(3)">11-16</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-danger w-100" (click)="genLoot(4)">17+</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="text-white">Reservas de tesouro</p>
+        </div>
+        <div class="col">
+            <button class="btn btn-danger w-100" (click)="genLoot(5)">0-4</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-danger w-100" (click)="genLoot(6)">5-10</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-danger w-100" (click)="genLoot(7)">11-16</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-danger w-100" (click)="genLoot(8)">17+</button>
+        </div>
+    </div>
+    <button (click)="teste()">teste</button>
+    <p class="text-white">
+        {{lootShow.money}}
+    </p>
+    <p class="text-white">
+        {{lootShow.gemArts}}
+    </p>
+</div>

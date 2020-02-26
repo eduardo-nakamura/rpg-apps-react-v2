@@ -1,0 +1,376 @@
+[{
+        "roll": 2,
+        "gemArt": {
+            "quant": 0,
+            "sides": 0,
+            "table": "1000GP",
+            "type": "Gemas"
+        }
+    },
+    {
+        "roll": 5,
+        "gemArt": {
+            "quant": 3,
+            "sides": 6,
+            "table": "1000GP",
+            "type": "Gemas"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 8,
+            "table": "TableC",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 8,
+        "gemArt": {
+            "quant": 1,
+            "sides": 10,
+            "table": "2500GP",
+            "type": "Objetos de Arte"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 8,
+            "table": "TableC",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 11,
+        "gemArt": {
+            "quant": 1,
+            "sides": 4,
+            "table": "7500GP",
+            "type": "Objetos de Arte "
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 8,
+            "table": "TableC",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 14,
+        "gemArt": {
+            "quant": 1,
+            "sides": 8,
+            "table": "5000GP",
+            "type": "Gemas"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 8,
+            "table": "TableC",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 22,
+        "gemArt": {
+            "quant": 3,
+            "sides": 6,
+            "table": "1000GP",
+            "type": "Gemas"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 6,
+            "table": "TableD",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 30,
+        "gemArt": {
+            "quant": 1,
+            "sides": 10,
+            "table": "2500GP",
+            "type": "Objetos de Arte"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 6,
+            "table": "TableD",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 38,
+        "gemArt": {
+            "quant": 1,
+            "sides": 4,
+            "table": "7500GP",
+            "type": "Objetos de Arte"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 6,
+            "table": "TableD",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 46,
+        "gemArt": {
+            "quant": 1,
+            "sides": 8,
+            "table": "5000GP",
+            "type": "Gemas"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 6,
+            "table": "TableD",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 52,
+        "gemArt": {
+            "quant": 3,
+            "sides": 6,
+            "table": "1000GP",
+            "type": "Gemas"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 6,
+            "table": "TableE",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 58,
+        "gemArt": {
+            "quant": 1,
+            "sides": 10,
+            "table": "2500GP",
+            "type": "Objetos de Arte"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 6,
+            "table": "TableE",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 63,
+        "gemArt": {
+            "quant": 1,
+            "sides": 4,
+            "table": "7500GP",
+            "type": "Objetos de Arte "
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 6,
+            "table": "TableE",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 68,
+        "gemArt": {
+            "quant": 1,
+            "sides": 8,
+            "table": "5000GP",
+            "type": "Gemas"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 6,
+            "table": "TableE",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 69,
+        "gemArt": {
+            "quant": 3,
+            "sides": 6,
+            "table": "1000GP",
+            "type": "gem"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 4,
+            "table": "TableG",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 70,
+        "gemArt": {
+            "quant": 1,
+            "sides": 10,
+            "table": "2500GP",
+            "type": "Objetos de Arte"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 4,
+            "table": "TableG",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 71,
+        "gemArt": {
+            "quant": 1,
+            "sides": 4,
+            "table": "7500GP",
+            "type": "Objetos de Arte "
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 4,
+            "table": "TableG",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 72,
+        "gemArt": {
+            "quant": 1,
+            "sides": 8,
+            "table": "5000GP",
+            "type": "Gemas"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 4,
+            "table": "TableG",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 74,
+        "gemArt": {
+            "quant": 3,
+            "sides": 6,
+            "table": "1000GP",
+            "type": "gem"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 4,
+            "table": "TableH",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 76,
+        "gemArt": {
+            "quant": 1,
+            "sides": 10,
+            "table": "2500GP",
+            "type": "Objetos de Arte"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 4,
+            "table": "TableH",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 78,
+        "gemArt": {
+            "quant": 1,
+            "sides": 4,
+            "table": "7500GP",
+            "type": "Objetos de Arte "
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 4,
+            "table": "TableH",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 80,
+        "gemArt": {
+            "quant": 1,
+            "sides": 8,
+            "table": "5000GP",
+            "type": "Gemas"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 4,
+            "table": "TableH",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 85,
+        "gemArt": {
+            "quant": 3,
+            "sides": 6,
+            "table": "1000GP",
+            "type": "Gemas"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 4,
+            "table": "TableI",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 90,
+        "gemArt": {
+            "quant": 1,
+            "sides": 10,
+            "table": "2500GP",
+            "type": "Objetos de Arte"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 4,
+            "table": "TableI",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 95,
+        "gemArt": {
+            "quant": 1,
+            "sides": 4,
+            "table": "7500GP",
+            "type": "Objetos de Arte "
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 1,
+            "table": "TableF",
+            "type": "Itens Mágicos"
+        },
+        "magItemB": {
+            "quant": 1,
+            "sides": 4,
+            "table": "TableG",
+            "type": "Itens Mágicos"
+        }
+    },
+    {
+        "roll": 100,
+        "gemArt": {
+            "quant": 1,
+            "sides": 8,
+            "table": "5000GP",
+            "type": "Gemas"
+        },
+        "magItemA": {
+            "quant": 1,
+            "sides": 4,
+            "table": "TableI",
+            "type": "Itens Mágicos"
+        }
+    }
+]
