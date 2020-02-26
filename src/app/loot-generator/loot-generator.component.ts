@@ -71,6 +71,7 @@ export class LootGeneratorComponent implements OnInit {
             this.lootShow.gemArts += lootRoll 
           }
         }
+        
         // let rollDiceStats = new Array(teste[key].quant.fill(null))
         
 
