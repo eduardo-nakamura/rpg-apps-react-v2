@@ -5,13 +5,20 @@
 .bg-grunge-black {
     background-image: url('../src/assets/blackbg.jpg');
     background-size: 100%;
+    background-position: center center;
     background-color: black;
 }
 
-.bg-table {
+.bg-grunge-red {
     background-image: url('../src/assets/grunge-metal-red-grunge-texture_1048-4051.jpg');
-    background-size: cover;
+    background-size: 100%;
     background-color: red;
+}
+
+.bg-table {
+    // background-image: url('../src/assets/grunge-metal-red-grunge-texture_1048-4051.jpg');
+    // background-size: cover;
+    // background-color: red;
     .mat-table {
         background-color: transparent;
     }
@@ -22,6 +29,8 @@
     p {
         font-size: 15px;
         font-family: 'Trade Winds', cursive;
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5);
     }
     h3 {
         font-size: 13px;
