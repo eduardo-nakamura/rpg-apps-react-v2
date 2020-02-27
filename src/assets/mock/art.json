@@ -1,60 +1,60 @@
 {
-    "25GP": {
-        "1": "Jarro de prata",
-        "2": "Estatueta esculpida em osso",
-        "3": "Bracelete de ouro pequeno",
-        "4": "Vestimenta de tecido dourado",
-        "5": "Máscara de veludo negra costurada com fios de prata",
-        "6": "Cálice de cobre com filigrana prateada",
-        "7": "Par de dados de osso com gravuras",
-        "8": "Pequeno espelho numa moldura de madeira pintada",
-        "9": "Lenço de seda bordado",
-        "10": "Broche de ouro com um retrato pintado dentro"
-    },
-    "250GP": {
-        "1": "Anel de ouro cravejado com pedras de sangue",
-        "2": "Estatueta esculpida em marfim",
-        "3": "Bracelete de ouro largo",
-        "4": "Gargantilha de prata com um pingente de pedra preciosa",
-        "5": "Coroa de bronze",
-        "6": "Robe de seda com adornos de ouro",
-        "7": "Grande tapeçaria elegante",
-        "8": "Caneca de bronze com jades incrustadas",
-        "9": "Caixa de miniaturas de animais em turquesa",
-        "10": "Gaiola de pássaro de ouro com filigrana de electro"
-    },
-    "750GP": {
-        "1": "Cálice de prata cravejado com pedras da lua",
-        "2": "Espada longa de lâmina prateada com conjunto de jatos no cabo",
-        "3": "Harpa de madeira exótica com marfim incrustado e gemas de zircónio",
-        "4": "Pequeno ídolo de ouro",
-        "5": "Pente de ouro em formato de dragão cravejada com granadas vermelhas nos olhos",
-        "6": "Rolha de garrafa gravada com folhas de ouro e cravejada com ametistas",
-        "7": "Adaga de electro cerimonial com uma pérola negra no pomo",
-        "8": "Broche de prata e ouro",
-        "9": "Estatueta de obsidiana com detalhes e incrustações de ouro",
-        "10": "Máscara de guerra de ouro pintada"
-    },
-    "2500GP": {
-        "1": "Corrente de ouro elegante cravejada com uma opala de fogo",
-        "2": "Antiga pintura obra-prima",
-        "3": "Manto de seda e veludo bordado com diversas pedras da lua cravejadas",
-        "4": "Bracelete de platina cravejado com uma safira",
-        "5": "Luvas bordadas com lascas de joias",
-        "6": "Peúga cheia de joias",
-        "7": "Caixa de música de ouro",
-        "8": "Argola de ouro cravejada com quatro águas marinhas",
-        "9": "Tapa-olho com um olho falso cravejado em uma safira azul e uma pedra da lua",
-        "10": "Um colar de pequenas pérolas rosas"
-    },
-    "7500GP": {
-        "1": "Coroa de ouro cheia de joias",
-        "2": "Anel de platina cheio de joias",
-        "3": "Pequena estatueta de ouro cravejada com rubis",
-        "4": "Taça de ouro cravejada com esmeraldas",
-        "5": "Caixa de joias de ouro com filigrana de platina",
-        "6": "Sarcófago infantil de ouro pintado",
-        "7": "Jogo de tabuleiro de jade com peças de ouro maciço",
-        "8": "Chifre de marfim adornado com filigrana de ouro"
-    }
+    "25GP": [
+        "Jarro de prata",
+        "Estatueta esculpida em osso",
+        "Bracelete de ouro pequeno",
+        "Vestimenta de tecido dourado",
+        "Máscara de veludo negra costurada com fios de prata",
+        "Cálice de cobre com filigrana prateada",
+        "Par de dados de osso com gravuras",
+        "Pequeno espelho numa moldura de madeira pintada",
+        "Lenço de seda bordado",
+        "Broche de ouro com um retrato pintado dentro"
+    ],
+    "250GP": [
+        "Anel de ouro cravejado com pedras de sangue",
+        "Estatueta esculpida em marfim",
+        "Bracelete de ouro largo",
+        "Gargantilha de prata com um pingente de pedra preciosa",
+        "Coroa de bronze",
+        "Robe de seda com adornos de ouro",
+        "Grande tapeçaria elegante",
+        "Caneca de bronze com jades incrustadas",
+        "Caixa de miniaturas de animais em turquesa",
+        "Gaiola de pássaro de ouro com filigrana de electro"
+    ],
+    "750GP": [
+        "Cálice de prata cravejado com pedras da lua",
+        "Espada longa de lâmina prateada com conjunto de jatos no cabo",
+        "Harpa de madeira exótica com marfim incrustado e gemas de zircónio",
+        "Pequeno ídolo de ouro",
+        "Pente de ouro em formato de dragão cravejada com granadas vermelhas nos olhos",
+        "Rolha de garrafa gravada com folhas de ouro e cravejada com ametistas",
+        "Adaga de electro cerimonial com uma pérola negra no pomo",
+        "Broche de prata e ouro",
+        "Estatueta de obsidiana com detalhes e incrustações de ouro",
+        "Máscara de guerra de ouro pintada"
+    ],
+    "2500GP": [
+        "Corrente de ouro elegante cravejada com uma opala de fogo",
+        "Antiga pintura obra-prima",
+        "Manto de seda e veludo bordado com diversas pedras da lua cravejadas",
+        "Bracelete de platina cravejado com uma safira",
+        "Luvas bordadas com lascas de joias",
+        "Peúga cheia de joias",
+        "Caixa de música de ouro",
+        "Argola de ouro cravejada com quatro águas marinhas",
+        "Tapa-olho com um olho falso cravejado em uma safira azul e uma pedra da lua",
+        "Um colar de pequenas pérolas rosas"
+    ],
+    "7500GP": [
+        "Coroa de ouro cheia de joias",
+        "Anel de platina cheio de joias",
+        "Pequena estatueta de ouro cravejada com rubis",
+        "Taça de ouro cravejada com esmeraldas",
+        "Caixa de joias de ouro com filigrana de platina",
+        "Sarcófago infantil de ouro pintado",
+        "Jogo de tabuleiro de jade com peças de ouro maciço",
+        "Chifre de marfim adornado com filigrana de ouro"
+    ]
 }

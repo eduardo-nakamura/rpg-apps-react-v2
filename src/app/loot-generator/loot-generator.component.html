@@ -1,12 +1,14 @@
 <div class="container">
-    <div class="row bg-header mt-2 pl-2 pt-2">
+
+
+    <div class="row bg-header mt-3 pl-2 pt-2">
         <h2>Loot Generator</h2>
     </div>
     <div class="row">
-        <h3 class="text-white">1. Determine o tipo e nível do encontro</h3>
+        <h3 class="text-white">Determine o tipo e nível do encontro</h3>
     </div>
-    <div class="row">
-        <div class="col-12">
+    <div class="row bg-dark mt-3 pb-2">
+        <div class="col-12 pt-2 pb-2">
             <p class="text-white">Tesouro individual</p>
         </div>
         <div class="col">
@@ -22,8 +24,8 @@
             <button class="btn btn-danger w-100" (click)="genLoot(4)">17+</button>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
+    <div class="row bg-dark mt-3 pb-2">
+        <div class="col-12  pt-2 pb-2">
             <p class="text-white">Reservas de tesouro</p>
         </div>
         <div class="col">
@@ -39,11 +41,94 @@
             <button class="btn btn-danger w-100" (click)="genLoot(8)">17+</button>
         </div>
     </div>
-    <button (click)="teste()">teste</button>
-    <p class="text-white">
-        {{lootShow.money}}
-    </p>
-    <p class="text-white">
-        {{lootShow.gemArts}}
-    </p>
+    <!-- <button (click)="teste()">teste</button> -->
+    <div class="row" *ngIf="lootShow.money">
+        <h3 class="text-white w-100 p-2">
+            Moedas
+        </h3>
+        <div class="col-12 bg-dark p-3">
+            <p class="text-white">
+                {{lootShow.money}}
+            </p>
+        </div>
+    </div>
+    <div class="row" *ngIf="lootShow.gemArts">
+        <h3 class="text-white w-100 p-2">
+            Tesouro
+        </h3>
+        <div class="col-12 bg-dark p-3">
+            <p class="text-white">
+                {{lootShow.gemArts}}
+            </p>
+        </div>
+    </div>
+    <div class="row" *ngIf="lootShow.magItems.length != 0">
+        <h3 class="text-white w-100 p-2">
+            Itens Mágicos
+        </h3>
+
+        <div class="col-12 bg-dark p-3">
+            <p class="text-white" *ngFor="let items of lootShow.magItems">
+                {{items}}
+            </p>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="lootNone">
+        <div class="col-12 mt-3  bg-danger p-3">
+            <p class="text-white">
+                Sem Loot
+            </p>
+        </div>
+    </div>
+
+    <div class="row bg-header mt-3 pl-2 pt-2">
+        <h2>Conversor de Moedas</h2>
+    </div>
+    <div class="row p-3 justify-content-center bg-dark">
+        <div class=" col-6 col-sm-4">
+            <input min="0" type="number" class="form-control flex-fill" value="Valor" required [(ngModel)]="valorToConvert">
+        </div>
+        <div class=" col-6 col-sm-4">
+            <select class="custom-select flex-fill" [(ngModel)]="selectedOption" required id="piece" name="piece">
+                <option selected>Escolha uma Moeda</option>
+                <option *ngFor="let option of selectOptions" [value]="option" >
+                    {{option}}
+                  </option>
+              </select>
+        </div>
+        <div class=" col-12 col-sm-4  ">
+            <button class="btn bg-danger w-100 text-white" (click)="convertPiece()">Converter</button>
+        </div>
+    </div>
+
+    <div class="bg-table mt-3">
+        <div class="row">
+            <table class="bg-convert w-100" mat-table [dataSource]="dataSourceConvert">
+                <ng-container matColumnDef="cobre">
+                    <th mat-header-cell *matHeaderCellDef class="text-light text-center"> Cobre </th>
+                    <td mat-cell *matCellDef="let element" class="text-light text-center"> {{element.cobre | number}} </td>
+                </ng-container>
+                <ng-container matColumnDef="prata">
+                    <th mat-header-cell *matHeaderCellDef class="text-light text-center"> Prata </th>
+                    <td mat-cell *matCellDef="let element" class="text-light text-center"> {{element.prata | number}} </td>
+                </ng-container>
+                <ng-container matColumnDef="electrum">
+                    <th mat-header-cell *matHeaderCellDef class="text-light text-center"> Electrum </th>
+                    <td mat-cell *matCellDef="let element" class="text-light text-center"> {{element.electrum | number}} </td>
+                </ng-container>
+                <ng-container matColumnDef="ouro">
+                    <th mat-header-cell *matHeaderCellDef class="text-light text-center"> Ouro </th>
+                    <td mat-cell *matCellDef="let element" class="text-light text-center"> {{element.ouro | number}} </td>
+                </ng-container>
+                <ng-container matColumnDef="platina">
+                    <th mat-header-cell *matHeaderCellDef class="text-light text-center"> Platina </th>
+                    <td mat-cell *matCellDef="let element" class="text-light text-center"> {{element.platina | number}} </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumnsConvert"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumnsConvert;"></tr>
+            </table>
+        </div>
+    </div>
+
 </div>

@@ -45,4 +45,7 @@ export class ApiService {
   public art(){
     return this.httpClient.get(`../assets/mock/art.json`)
   }
+  public magItem(){
+    return this.httpClient.get(`../assets/mock/magItem.json`)
+  }
 }

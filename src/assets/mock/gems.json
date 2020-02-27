@@ -1,66 +1,66 @@
 {
-    "10GP": {
-        "1": "Azurita",
-        "2": "Ágata malhada ",
-        "3": "Quartzo azul",
-        "4": "Ágata ocular",
-        "5": "Hematita",
-        "6": "Lápis lazúli",
-        "7": "Malaquita",
-        "8": "Ágata musgo",
-        "9": "Obsidiana",
-        "10": "Rodocrosita",
-        "11": "Olho de tigre",
-        "12": "Turquesa"
-    },
-    "50GP": {
-        "1": "Pedra de sangue",
-        "2": "Cornalina",
-        "3": "Calcedônia",
-        "4": "Crisoprásio",
-        "5": "Citrina",
-        "6": "Jaspe",
-        "7": "Pedra lunar",
-        "8": "Ônix",
-        "9": "Quartzo",
-        "10": "Sardônica",
-        "11": "Quartzo rosa estrela",
-        "12": "Zircônio"
-    },
-    "100GP": {
-        "1": "Âmbar",
-        "2": "Ametista",
-        "3": "Crisoberilo",
-        "4": "Coral",
-        "5": "Granada",
-        "6": "Jade",
-        "7": "Jato",
-        "8": "Pérola",
-        "9": "Espinela",
-        "10": "Turmalina"
-    },
-    "500GP": {
-        "1": "Alexandrita",
-        "2": "Água-marinha",
-        "3": "Pérola negra",
-        "4": "Espinela azul",
-        "5": "Peridoto",
-        "6": "Topázio"
-    },
-    "1000GP": {
-        "1": "Opala negra",
-        "2": "Safira azul",
-        "3": "Esmeralda",
-        "4": "Opala de fogo",
-        "5": "Opala",
-        "6": "Rubi estrela",
-        "7": "Safira estrela",
-        "8": "Safira amarela"
-    },
-    "5000GP": {
-        "1": "Safira negra",
-        "2": "Diamante",
-        "3": "Jacinto",
-        "4": "Rubi"
-    }
+    "10GP": [
+        "Azurita",
+        "Ágata malhada ",
+        "Quartzo azul",
+        "Ágata ocular",
+        "Hematita",
+        "Lápis lazúli",
+        "Malaquita",
+        "Ágata musgo",
+        "Obsidiana",
+        "Rodocrosita",
+        "Olho de tigre",
+        "Turquesa"
+    ],
+    "50GP": [
+        "Pedra de sangue",
+        "Cornalina",
+        "Calcedônia",
+        "Crisoprásio",
+        "Citrina",
+        "Jaspe",
+        "Pedra lunar",
+        "Ônix",
+        "Quartzo",
+        "Sardônica",
+        "Quartzo rosa estrela",
+        "Zircônio"
+    ],
+    "100GP": [
+        "Âmbar",
+        "Ametista",
+        "Crisoberilo",
+        "Coral",
+        "Granada",
+        "Jade",
+        "Jato",
+        "Pérola",
+        "Espinela",
+        "Turmalina"
+    ],
+    "500GP": [
+        "Alexandrita",
+        "Água-marinha",
+        "Pérola negra",
+        "Espinela azul",
+        "Peridoto",
+        "Topázio"
+    ],
+    "1000GP": [
+        "Opala negra",
+        "Safira azul",
+        "Esmeralda",
+        "Opala de fogo",
+        "Opala",
+        "Rubi estrela",
+        "Safira estrela",
+        "Safira amarela"
+    ],
+    "5000GP": [
+        "Safira negra",
+        "Diamante",
+        "Jacinto",
+        "Rubi"
+    ]
 }
