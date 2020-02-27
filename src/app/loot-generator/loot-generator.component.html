@@ -7,7 +7,7 @@
     <div class="row">
         <h3 class="text-white">Determine o tipo e nível do encontro</h3>
     </div>
-    <div class="row bg-dark mt-3 pb-2">
+    <div class="row bg-grunge-black mt-3 pb-2">
         <div class="col-12 pt-2 pb-2">
             <p class="text-white">Tesouro individual</p>
         </div>
@@ -24,7 +24,7 @@
             <button class="btn btn-danger w-100" (click)="genLoot(4)">17+</button>
         </div>
     </div>
-    <div class="row bg-dark mt-3 pb-2">
+    <div class="row bg-grunge-black mt-3 pb-2">
         <div class="col-12  pt-2 pb-2">
             <p class="text-white">Reservas de tesouro</p>
         </div>
@@ -46,7 +46,7 @@
         <h3 class="text-white w-100 p-2">
             Moedas
         </h3>
-        <div class="col-12 bg-dark p-3">
+        <div class="col-12 bg-grunge-black p-3">
             <p class="text-white">
                 {{lootShow.money}}
             </p>
@@ -56,7 +56,7 @@
         <h3 class="text-white w-100 p-2">
             Tesouro
         </h3>
-        <div class="col-12 bg-dark p-3">
+        <div class="col-12 bg-grunge-black p-3">
             <p class="text-white">
                 {{lootShow.gemArts}}
             </p>
@@ -67,7 +67,7 @@
             Itens Mágicos
         </h3>
 
-        <div class="col-12 bg-dark p-3">
+        <div class="col-12 bg-grunge-black p-3">
             <p class="text-white" *ngFor="let items of lootShow.magItems">
                 {{items}}
             </p>
@@ -85,7 +85,7 @@
     <div class="row bg-header mt-3 pl-2 pt-2">
         <h2>Conversor de Moedas</h2>
     </div>
-    <div class="row p-3 justify-content-center bg-dark">
+    <div class="row p-3 justify-content-center bg-grunge-black">
         <div class=" col-6 col-sm-4">
             <input min="0" type="number" class="form-control flex-fill" value="Valor" required [(ngModel)]="valorToConvert">
         </div>

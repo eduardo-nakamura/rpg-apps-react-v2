@@ -9,7 +9,7 @@
                 <div class="input-group-prepend ">
                     <label class="input-group-text bg-danger text-white" for="inputGroupSelect01">{{lang[langSelected].partySelect}}</label>
                 </div>
-                <select (change)="selectChangeHandlers($event)" [(ngModel)]="selectedOption" class="custom-select bg-dark text-light" id="inputGroupSelect01">
+                <select (change)="selectChangeHandlers($event)" [(ngModel)]="selectedOption" class="custom-select bg-grunge-black text-light" id="inputGroupSelect01">
                         <option *ngFor="let option of selectOptions" [value]="option" >
                             {{option}}
                           </option>
@@ -25,7 +25,7 @@
                             <i class="fas fa-user-plus"></i>
                         </span>
                 </div>
-                <input type="text" [(ngModel)]="addNewChar" class="form-control bg-dark text-white" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" [(ngModel)]="addNewChar" class="form-control bg-grunge-black text-white" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
                 <div class="input-group-prepend">
                     <button (click)="addChar()" class="btn bg-danger text-white" type="button"><i class="fas fa-plus"></i></button>
                 </div>
