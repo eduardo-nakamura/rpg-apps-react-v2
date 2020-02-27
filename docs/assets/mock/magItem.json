@@ -1,0 +1,2191 @@
+{
+    "TableA": [{
+            "roll": 50,
+            "value": "50GP",
+            "name": "Poção de cura",
+            "page": 153
+        },
+        {
+            "roll": 60,
+            "value": "50GP",
+            "name": "Pergaminho de magia (truque)",
+            "page": 197
+        },
+        {
+            "roll": 70,
+            "value": "50GP",
+            "name": "Poção de escalar",
+            "page": 202
+        },
+        {
+            "roll": 90,
+            "value": "100",
+            "name": "Pergaminho de magia (1° nível)",
+            "page": 197
+        },
+        {
+            "roll": 94,
+            "value": "250",
+            "name": "Pergaminho de magia (2° nível)",
+            "page": 197
+        },
+        {
+            "roll": 98,
+            "value": "250GP",
+            "name": "Poção de cura maior",
+            "page": 201
+        },
+        {
+            "roll": 99,
+            "value": "3000GP",
+            "name": "Mochila de carga",
+            "page": 194
+        },
+        {
+            "roll": 100,
+            "value": "4000GP",
+            "name": "Globo de fluxo",
+            "page": 187
+        }
+    ],
+    "TableB": [{
+            "roll": 15,
+            "value": "250GP",
+            "name": "Poção de cura maior",
+            "page": 201
+        },
+        {
+            "roll": 22,
+            "value": "500GP",
+            "name": "Poção de sopro de fogo",
+            "page": 203
+        },
+        {
+            "roll": 29,
+            "value": "400GP",
+            "name": "Poção de resistência",
+            "page": 203
+        },
+        {
+            "roll": 34,
+            "value": "250GP",
+            "name": "Munição +1",
+            "page": 194
+        },
+        {
+            "roll": 39,
+            "value": "300GP",
+            "name": "Poção de amizade animal",
+            "page": 201
+        },
+        {
+            "roll": 44,
+            "value": "50GP",
+            "name": "Poção de força do gigante da colina",
+            "page": 202
+        },
+        {
+            "roll": 49,
+            "value": "50GP",
+            "name": "Poção de aumentar",
+            "page": 201
+        },
+        {
+            "roll": 54,
+            "value": "50GP",
+            "name": "Poção de respirar na água",
+            "page": 203
+        },
+        {
+            "roll": 59,
+            "value": "50GP",
+            "name": "Pergaminho de magia (2° nível)",
+            "page": 197
+        },
+        {
+            "roll": 64,
+            "value": "50GP",
+            "name": "Pergaminho de magia (3° nível)",
+            "page": 197
+        },
+        {
+            "roll": 67,
+            "value": "50GP",
+            "name": "Mochila de carga",
+            "page": 194
+        },
+        {
+            "roll": 70,
+            "value": "50GP",
+            "name": "Unguento de Keoghtom",
+            "page": 210
+        },
+        {
+            "roll": 73,
+            "value": "50GP",
+            "name": "Óleo escorregadio",
+            "page": 195
+        },
+        {
+            "roll": 75,
+            "value": "50GP",
+            "name": "Pó do desaparecimento",
+            "page": 201
+        },
+        {
+            "roll": 77,
+            "value": "50GP",
+            "name": "Pó da seca",
+            "page": 201
+        },
+        {
+            "roll": 79,
+            "value": "50GP",
+            "name": "Pó de espirrar e tossir",
+            "page": 200
+        },
+        {
+            "roll": 81,
+            "value": "50GP",
+            "name": "Gema elemental",
+            "page": 186
+        },
+        {
+            "roll": 83,
+            "value": "50GP",
+            "name": "Filtro do amor",
+            "page": 183
+        },
+        {
+            "roll": 84,
+            "value": "50GP",
+            "name": "Jarro de alquimia",
+            "page": 187
+        },
+        {
+            "roll": 85,
+            "value": "50GP",
+            "name": "Capa de respirar na água",
+            "page": 171
+        },
+        {
+            "roll": 86,
+            "value": "50GP",
+            "name": "Manto da arraia",
+            "page": 191
+        },
+        {
+            "roll": 87,
+            "value": "50GP",
+            "name": "Globo de fluxo",
+            "page": 187
+        },
+        {
+            "roll": 88,
+            "value": "50GP",
+            "name": "Óculos noturnos",
+            "page": 203
+        },
+        {
+            "roll": 89,
+            "value": "50GP",
+            "name": "Elmo de compreensão de idiomas",
+            "page": 177
+        },
+        {
+            "roll": 90,
+            "value": "50GP",
+            "name": "Bastão imóvel",
+            "page": 163
+        },
+        {
+            "roll": 91,
+            "value": "50GP",
+            "name": "Lanterna de revelação",
+            "page": 189
+        },
+        {
+            "roll": 92,
+            "value": "50GP",
+            "name": "Armadura do marinheiro",
+            "page": 156
+        },
+        {
+            "roll": 93,
+            "value": "50GP",
+            "name": "Armadura de mitral",
+            "page": 156
+        },
+        {
+            "roll": 94,
+            "value": "50GP",
+            "name": "Poção de envenenamento",
+            "page": 202
+        },
+        {
+            "roll": 95,
+            "value": "50GP",
+            "name": "Anel de natação",
+            "page": 153
+        },
+        {
+            "roll": 96,
+            "value": "50GP",
+            "name": "Robe dos itens úteis",
+            "page": 205
+        },
+        {
+            "roll": 97,
+            "value": "50GP",
+            "name": "Corda de escalada",
+            "page": 174
+        },
+        {
+            "roll": 98,
+            "value": "50GP",
+            "name": "Sela do cavaleiro",
+            "page": 207
+        },
+        {
+            "roll": 99,
+            "value": "50GP",
+            "name": "Varinha de detectar magia",
+            "page": 212
+        },
+        {
+            "roll": 100,
+            "value": "50GP",
+            "name": "Varinha de segredos",
+            "page": 213
+        }
+    ],
+    "TableC": [{
+            "roll": 15,
+            "value": "250GP",
+            "name": "Poção de cura maior",
+            "page": 153
+        },
+        {
+            "roll": 22,
+            "value": "50GP",
+            "name": "Pergaminho de magia (4° nível)",
+            "page": 197
+        },
+        {
+            "roll": 27,
+            "value": "50GP",
+            "name": "Munição +2",
+            "page": 194
+        },
+        {
+            "roll": 32,
+            "value": "50GP",
+            "name": "Poção de clarividência",
+            "page": 201
+        },
+        {
+            "roll": 37,
+            "value": "50GP",
+            "name": "Poção de encolher",
+            "page": 201
+        },
+        {
+            "roll": 42,
+            "value": "50GP",
+            "name": "Poção de forma gasosa",
+            "page": 202
+        },
+        {
+            "roll": 47,
+            "value": "50GP",
+            "name": "Poção de força do gigante do gelo",
+            "page": 202
+        },
+        {
+            "roll": 52,
+            "value": "50GP",
+            "name": "Poção de força do gigante de pedra",
+            "page": 202
+        },
+        {
+            "roll": 57,
+            "value": "50GP",
+            "name": "Poção de heroísmo",
+            "page": 202
+        },
+        {
+            "roll": 62,
+            "value": "50GP",
+            "name": "Poção de invulnerabilidade",
+            "page": 203
+        },
+        {
+            "roll": 67,
+            "value": "50GP",
+            "name": "Poção de ler mentes",
+            "page": 203
+        },
+        {
+            "roll": 72,
+            "value": "50GP",
+            "name": "Pergaminho de magia (5° nível)",
+            "page": 197
+        },
+        {
+            "roll": 75,
+            "value": "50GP",
+            "name": "Elixir de saúde",
+            "page": 177
+        },
+        {
+            "roll": 78,
+            "value": "50GP",
+            "name": "Óleo de forma etérea",
+            "page": 194
+        },
+        {
+            "roll": 81,
+            "value": "50GP",
+            "name": "Poção de força do gigante do fogo",
+            "page": 202
+        },
+        {
+            "roll": 84,
+            "value": "50GP",
+            "name": "Pena de Quaal",
+            "page": 196
+        },
+        {
+            "roll": 87,
+            "value": "50GP",
+            "name": "Pergaminho de proteção",
+            "page": 199
+        },
+        {
+            "roll": 89,
+            "value": "50GP",
+            "name": "Saco de feijões",
+            "page": 206
+        },
+        {
+            "roll": 91,
+            "value": "50GP",
+            "name": "Contas de força",
+            "page": 173
+        },
+        {
+            "roll": 92,
+            "value": "50GP",
+            "name": "Carrilhão de abertura",
+            "page": 172
+        },
+        {
+            "roll": 93,
+            "value": "50GP",
+            "name": "Decantador de água infinita",
+            "page": 175
+        },
+        {
+            "roll": 94,
+            "value": "50GP",
+            "name": "Olhos de visão momentânea",
+            "page": 204
+        },
+        {
+            "roll": 95,
+            "value": "50GP",
+            "name": "Barco dobrável",
+            "page": 160
+        },
+        {
+            "roll": 96,
+            "value": "50GP",
+            "name": "Sacola prestativa de Heward",
+            "page": 206
+        },
+        {
+            "roll": 97,
+            "value": "50GP",
+            "name": "Ferraduras da velocidade",
+            "page": 183
+        },
+        {
+            "roll": 98,
+            "value": "50GP",
+            "name": "Colar de bolas de fogo",
+            "page": 173
+        },
+        {
+            "roll": 99,
+            "value": "50GP",
+            "name": "Periapto de saúde",
+            "page": 200
+        },
+        {
+            "roll": 100,
+            "value": "50GP",
+            "name": "Pedras de mensagem",
+            "page": 196
+        }
+    ],
+    "TableD": [{
+            "value": "50GP",
+            "roll": 20,
+            "name": "Poção de cura suprema",
+            "page": 153
+        },
+        {
+            "value": "50GP",
+            "roll": 30,
+            "name": "Poção de invisibilidade",
+            "page": 202
+        },
+        {
+            "value": "50GP",
+            "roll": 40,
+            "name": "Poção de velocidade",
+            "page": 203
+        },
+        {
+            "value": "50GP",
+            "roll": 50,
+            "name": "Pergaminho de magia (6° nível)",
+            "page": 197
+        },
+        {
+            "value": "50GP",
+            "roll": 57,
+            "name": "Pergaminho de magia (7° nível)",
+            "page": 197
+        },
+        {
+            "value": "50GP",
+            "roll": 62,
+            "name": "Munição +3",
+            "page": 194
+        },
+        {
+            "value": "50GP",
+            "roll": 67,
+            "name": "Óleo de precisão",
+            "page": 203
+        },
+        {
+            "value": "50GP",
+            "roll": 72,
+            "name": "Poção de voo",
+            "page": 203
+        },
+        {
+            "value": "50GP",
+            "roll": 77,
+            "name": "Poção de força do gigante das nuvens",
+            "page": 202
+        },
+        {
+            "value": "50GP",
+            "roll": 82,
+            "name": "Poção de longevidade",
+            "page": 203
+        },
+        {
+            "value": "50GP",
+            "roll": 87,
+            "name": "Poção de vitalidade",
+            "page": 203
+        },
+        {
+            "value": "50GP",
+            "roll": 92,
+            "name": "Pergaminho de magia (8° nível)",
+            "page": 197
+        },
+        {
+            "value": "50GP",
+            "roll": 95,
+            "name": "Ferraduras de zéfiro",
+            "page": 183
+        },
+        {
+            "value": "50GP",
+            "roll": 98,
+            "name": "Pigmentos maravilhosos de Nolzur",
+            "page": 200
+        },
+        {
+            "value": "50GP",
+            "roll": 99,
+            "name": "Bolsa devoradora",
+            "page": 164
+        },
+        {
+            "value": "50GP",
+            "roll": 100,
+            "name": "Buraco portátil",
+            "page": 165
+        }
+    ],
+    "TableE": [{
+            "value": "50GP",
+            "roll": 30,
+            "name": "Pergaminho de magia (8° nível)",
+            "page": 197
+        },
+        {
+            "value": "50GP",
+            "roll": 55,
+            "name": "Poção de força do gigante da tempestade",
+            "page": 202
+        },
+        {
+            "value": "50GP",
+            "roll": 70,
+            "name": "Poção de cura suprema",
+            "page": 153
+        },
+        {
+            "value": "50GP",
+            "roll": 85,
+            "name": "Pergaminho de magia (9° nível)",
+            "page": 197
+        },
+        {
+            "value": "50GP",
+            "roll": 93,
+            "name": "Solvente universal",
+            "page": 207
+        },
+        {
+            "value": "50GP",
+            "roll": 98,
+            "name": "Flecha assassina",
+            "page": 184
+        },
+        {
+            "value": "50GP",
+            "roll": 100,
+            "name": "Cola soberana",
+            "page": 173
+        }
+    ],
+    "TableF": [{
+            "value": "50GP",
+            "roll": 15,
+            "name": "Arma +1",
+            "page": 155
+        },
+        {
+            "value": "50GP",
+            "roll": 18,
+            "name": "Escudo +1",
+            "page": 178
+        },
+        {
+            "value": "50GP",
+            "roll": 21,
+            "name": "Escudo sentinela",
+            "page": 178
+        },
+        {
+            "value": "50GP",
+            "roll": 23,
+            "name": "Amuleto de proteção contra detecção e localização",
+            "page": 150
+        },
+        {
+            "value": "50GP",
+            "roll": 25,
+            "name": "Botas élficas",
+            "page": 165
+        },
+        {
+            "value": "50GP",
+            "roll": 27,
+            "name": "Botas de caminhar e saltar",
+            "page": 164
+        },
+        {
+            "value": "50GP",
+            "roll": 29,
+            "name": "Braçadeiras de arquearia",
+            "page": 165
+        },
+        {
+            "value": "50GP",
+            "roll": 31,
+            "name": "Broche do escudo",
+            "page": 165
+        },
+        {
+            "value": "50GP",
+            "roll": 33,
+            "name": "Vassoura voadora",
+            "page": 214
+        },
+        {
+            "value": "50GP",
+            "roll": 35,
+            "name": "Manto élfico",
+            "page": 192
+        },
+        {
+            "value": "50GP",
+            "roll": 37,
+            "name": "Manto de proteção",
+            "page": 192
+        },
+        {
+            "value": "50GP",
+            "roll": 39,
+            "name": "Manoplas de força do ogro",
+            "page": 191
+        },
+        {
+            "value": "50GP",
+            "roll": 41,
+            "name": "Chapéu de disfarce",
+            "page": 172
+        },
+        {
+            "value": "50GP",
+            "roll": 43,
+            "name": "Azagaia de relâmpago",
+            "page": 157
+        },
+        {
+            "value": "50GP",
+            "roll": 45,
+            "name": "Pérola do poder",
+            "page": 200
+        },
+        {
+            "value": "50GP",
+            "roll": 47,
+            "name": "Bastão guardião de pactos +1",
+            "page": 163
+        },
+        {
+            "value": "50GP",
+            "roll": 49,
+            "name": "Sandálias de patas de aranha",
+            "page": 207
+        },
+        {
+            "value": "50GP",
+            "roll": 51,
+            "name": "Cajado da víbora",
+            "page": 166
+        },
+        {
+            "value": "50GP",
+            "roll": 53,
+            "name": "Cajado da píton",
+            "page": 166
+        },
+        {
+            "value": "50GP",
+            "roll": 55,
+            "name": "Espada da vingança",
+            "page": 180
+        },
+        {
+            "value": "50GP",
+            "roll": 57,
+            "name": "Tridente de comandar peixes",
+            "page": 209
+        },
+        {
+            "value": "50GP",
+            "roll": 59,
+            "name": "Varinha de misseis mágicos",
+            "page": 212
+        },
+        {
+            "value": "50GP",
+            "roll": 61,
+            "name": "Varinha do arcano de guerra +1",
+            "page": 214
+        },
+        {
+            "value": "50GP",
+            "roll": 63,
+            "name": "Varinha de teia",
+            "page": 213
+        },
+        {
+            "value": "50GP",
+            "roll": 65,
+            "name": "Arma de alerta",
+            "page": 155
+        },
+        {
+            "value": "50GP",
+            "roll": 66,
+            "name": "Armadura de adamante (cota de malha)",
+            "page": 155
+        },
+        {
+            "value": "50GP",
+            "roll": 67,
+            "name": "Armadura de adamante (camisão de malha)",
+            "page": 155
+        },
+        {
+            "value": "50GP",
+            "roll": 68,
+            "name": "Armadura de adamante (brunea)",
+            "page": 155
+        },
+        {
+            "value": "50GP",
+            "roll": 69,
+            "name": "Bolsa de truques (cinza)",
+            "page": 163
+        },
+        {
+            "value": "50GP",
+            "roll": 70,
+            "name": "Bolsa de truques (ferrugem)",
+            "page": 163
+        },
+        {
+            "value": "50GP",
+            "roll": 71,
+            "name": "Bolsa de truques (bronze)",
+            "page": 163
+        },
+        {
+            "value": "2500",
+            "roll": 72,
+            "name": "Botas do inverno",
+            "page": 164
+        },
+        {
+            "value": "50GP",
+            "roll": 73,
+            "name": "Diadema da destruição",
+            "page": 175
+        },
+        {
+            "value": "50GP",
+            "roll": 74,
+            "name": "Baralho das ilusões",
+            "page": 157
+        },
+        {
+            "value": "50GP",
+            "roll": 75,
+            "name": "Garrafa da fumaça eterna",
+            "page": 185
+        },
+        {
+            "value": "50GP",
+            "roll": 76,
+            "name": "Olhos do encantamento",
+            "page": 204
+        },
+        {
+            "value": "50GP",
+            "roll": 77,
+            "name": "Olhos de águia",
+            "page": 203
+        },
+        {
+            "value": "50GP",
+            "roll": 78,
+            "name": "Estátua de poderes incríveis (corvo de prata)",
+            "page": 181
+        },
+        {
+            "value": "50GP",
+            "roll": 79,
+            "name": "Gema da luminosidade",
+            "page": 186
+        },
+        {
+            "value": "50GP",
+            "roll": 80,
+            "name": "Luvas de apanhar projeteis",
+            "page": 189
+        },
+        {
+            "value": "50GP",
+            "roll": 81,
+            "name": "Luvas de nadar e escalar",
+            "page": 189
+        },
+        {
+            "value": "50GP",
+            "roll": 82,
+            "name": "Luvas do ladrão",
+            "page": 189
+        },
+        {
+            "value": "50GP",
+            "roll": 83,
+            "name": "Tiara do intelecto",
+            "page": 208
+        },
+        {
+            "value": "50GP",
+            "roll": 84,
+            "name": "Elmo de telepatia",
+            "page": 177
+        },
+        {
+            "value": "50GP",
+            "roll": 85,
+            "name": "Instrumento dos bardos (alaúde de Doss)",
+            "page": 187
+        },
+        {
+            "value": "50GP",
+            "roll": 86,
+            "name": "Instrumento dos bardos (bandolim de Fochlucan)",
+            "page": 187
+        },
+        {
+            "value": "50GP",
+            "roll": 87,
+            "name": "Instrumento dos bardos (citara de Mac-Fuimidh)",
+            "page": 187
+        },
+        {
+            "value": "50GP",
+            "roll": 88,
+            "name": "Medalhão de pensamentos",
+            "page": 194
+        },
+        {
+            "value": "50GP",
+            "roll": 89,
+            "name": "Colar de adaptação",
+            "page": 173
+        },
+        {
+            "value": "50GP",
+            "roll": 90,
+            "name": "Periapto da cicatrização",
+            "page": 199
+        },
+        {
+            "value": "50GP",
+            "roll": 91,
+            "name": "Flauta assombrada",
+            "page": 183
+        },
+        {
+            "value": "50GP",
+            "roll": 92,
+            "name": "Flauta dos esgotos",
+            "page": 184
+        },
+        {
+            "value": "50GP",
+            "roll": 93,
+            "name": "Anel de saltar",
+            "page": 154
+        },
+        {
+            "value": "50GP",
+            "roll": 94,
+            "name": "Anel de escudo mental",
+            "page": 152
+        },
+        {
+            "value": "50GP",
+            "roll": 95,
+            "name": "Anel de calor",
+            "page": 151
+        },
+        {
+            "value": "50GP",
+            "roll": 96,
+            "name": "Anel de andar na água",
+            "page": 151
+        },
+        {
+            "value": "50GP",
+            "roll": 97,
+            "name": "Aljava de Ehlonna",
+            "page": 150
+        },
+        {
+            "value": "50GP",
+            "roll": 98,
+            "name": "Pedra da boa sorte",
+            "page": 195
+        },
+        {
+            "value": "50GP",
+            "roll": 99,
+            "name": "Leque do vento",
+            "page": 189
+        },
+        {
+            "value": "50GP",
+            "roll": 100,
+            "name": "Botas aladas",
+            "page": 164
+        }
+    ],
+    "TableG": [{
+            "value": "50GP",
+            "roll": 11,
+            "name": "Arma +2",
+            "page": 155
+        },
+        {
+            "value": "50GP",
+            "roll": 14,
+            "name": "Estátua de poderes incríveis",
+            "types": ["Grifo de Bronze", "Mosca de Ébano", "Leão de Ouro", "Bode de Marfim", "Elefante de Marmore", "Cachorro de Ônix", "Cachorro de Ônix", "Coruja de Serpentinita"],
+            "page": 181
+        },
+        {
+            "value": "50GP",
+            "roll": 15,
+            "name": "Armadura de adamante (peitoral)",
+            "page": 155
+        },
+        {
+            "value": "50GP",
+            "roll": 16,
+            "name": "Armadura de adamante (cota de talas)",
+            "page": 155
+        },
+        {
+            "value": "50GP",
+            "roll": 17,
+            "name": "Amuleto de saúde",
+            "page": 150
+        },
+        {
+            "value": "50GP",
+            "roll": 18,
+            "name": "Armadura de vulnerabilidade",
+            "page": 156
+        },
+        {
+            "value": "50GP",
+            "roll": 19,
+            "name": "Escudo apanhador de flechas",
+            "page": 178
+        },
+        {
+            "value": "50GP",
+            "roll": 20,
+            "name": "Cinto dos anões",
+            "page": 172
+        },
+        {
+            "value": "50GP",
+            "roll": 21,
+            "name": "Cinturão de força do gigante da colina",
+            "page": 172
+        },
+        {
+            "value": "50GP",
+            "roll": 22,
+            "name": "Machado furioso",
+            "page": 190
+        },
+        {
+            "value": "50GP",
+            "roll": 23,
+            "name": "Botas de levitação",
+            "page": 164
+        },
+        {
+            "value": "50GP",
+            "roll": 24,
+            "name": "Botas de velocidade",
+            "page": 164
+        },
+        {
+            "value": "50GP",
+            "roll": 25,
+            "name": "Bacia de comandar elementais da água",
+            "page": 157
+        },
+        {
+            "value": "50GP",
+            "roll": 26,
+            "name": "Braceletes de defesa",
+            "page": 165
+        },
+        {
+            "value": "50GP",
+            "roll": 27,
+            "name": "Braseiro de comandar elementais do fogo",
+            "page": 165
+        },
+        {
+            "value": "50GP",
+            "roll": 28,
+            "name": "Capa do saltimbanco",
+            "page": 172
+        },
+        {
+            "value": "50GP",
+            "roll": 29,
+            "name": "Incensório de comandar elementais do ar",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 30,
+            "name": "Cota de malha +1",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 31,
+            "name": "Armadura da resistência (cota de malha)",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 32,
+            "name": "Camisão de malha +1",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 33,
+            "name": "Armadura da resistência (camisão de malha)",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 34,
+            "name": "Manto de deslocamento",
+            "page": 191
+        },
+        {
+            "value": "50GP",
+            "roll": 35,
+            "name": "Manto do morcego",
+            "page": 192
+        },
+        {
+            "value": "50GP",
+            "roll": 36,
+            "name": "Cubo de força",
+            "page": 175
+        },
+        {
+            "value": "50GP",
+            "roll": 37,
+            "name": "Fortaleza instantânea de Daern",
+            "page": 184
+        },
+        {
+            "value": "50GP",
+            "roll": 38,
+            "name": "Adaga de envenenamento",
+            "page": 150
+        },
+        {
+            "value": "50GP",
+            "roll": 39,
+            "name": "Algemas dimensionais",
+            "page": 150
+        },
+        {
+            "value": "50GP",
+            "roll": 40,
+            "name": "Matadora de dragões",
+            "page": 193
+        },
+        {
+            "value": "50GP",
+            "roll": 41,
+            "name": "Malha élfica",
+            "page": 191
+        },
+        {
+            "value": "50GP",
+            "roll": 42,
+            "name": "Língua flamejante",
+            "page": 189
+        },
+        {
+            "value": "50GP",
+            "roll": 43,
+            "name": "Gema de visão",
+            "page": 186
+        },
+        {
+            "value": "50GP",
+            "roll": 44,
+            "name": "Matador de gigantes",
+            "page": 194
+        },
+        {
+            "value": "50GP",
+            "roll": 45,
+            "name": "Couro batido encantador",
+            "page": 175
+        },
+        {
+            "value": "50GP",
+            "roll": 46,
+            "name": "Elmo de teletransporte",
+            "page": 177
+        },
+        {
+            "value": "50GP",
+            "roll": 47,
+            "name": "Trombeta da destruição",
+            "page": 209
+        },
+        {
+            "value": "50GP",
+            "roll": 48,
+            "name": "Trombeta do Valhalla (prata e latão)",
+            "page": 209
+        },
+        {
+            "value": "50GP",
+            "roll": 49,
+            "name": "Instrumento dos bardos (mandolim de Canaith)",
+            "page": 187
+        },
+        {
+            "value": "50GP",
+            "roll": 50,
+            "name": "Instrumento dos bardos (lira de Cli)",
+            "page": 187
+        },
+        {
+            "value": "50GP",
+            "roll": 51,
+            "name": "Pedra iônica (prontidão)",
+            "page": 195
+        },
+        {
+            "value": "50GP",
+            "roll": 52,
+            "name": "Pedra iônica (proteção)",
+            "page": 195
+        },
+        {
+            "value": "50GP",
+            "roll": 53,
+            "name": "Pedra iônica (armazenamento)",
+            "page": 195
+        },
+        {
+            "value": "50GP",
+            "roll": 54,
+            "name": "Pedra iônica (sustento)",
+            "page": 195
+        },
+        {
+            "value": "50GP",
+            "roll": 55,
+            "name": "Faixas de ferro de Bilarro",
+            "page": 183
+        },
+        {
+            "value": "50GP",
+            "roll": 56,
+            "name": "Armadura de couro +1",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 57,
+            "name": "Armadura de resistência (couro)",
+            "page": 156
+        },
+        {
+            "value": "50GP",
+            "roll": 58,
+            "name": "Maça do rompimento",
+            "page": 190
+        },
+        {
+            "value": "50GP",
+            "roll": 59,
+            "name": "Maça de destruição",
+            "page": 189
+        },
+        {
+            "value": "50GP",
+            "roll": 60,
+            "name": "Maça do terror",
+            "page": 190
+        },
+        {
+            "value": "50GP",
+            "roll": 61,
+            "name": "Manto de resistência à magia",
+            "page": 192
+        },
+        {
+            "value": "50GP",
+            "roll": 62,
+            "name": "Corrente de contas de oração",
+            "page": 174
+        },
+        {
+            "value": "50GP",
+            "roll": 63,
+            "name": "Periapto de proteção contra veneno",
+            "page": 199
+        },
+        {
+            "value": "50GP",
+            "roll": 64,
+            "name": "Anel de cativar animais",
+            "page": 151
+        },
+        {
+            "value": "50GP",
+            "roll": 65,
+            "name": "Anel de evasão",
+            "page": 153
+        },
+        {
+            "value": "50GP",
+            "roll": 66,
+            "name": "Anel de queda suave",
+            "page": 153
+        },
+        {
+            "value": "50GP",
+            "roll": 67,
+            "name": "Anel de ação livre",
+            "page": 151
+        },
+        {
+            "value": "50GP",
+            "roll": 68,
+            "name": "Anel de proteção",
+            "page": 153
+        },
+        {
+            "value": "50GP",
+            "roll": 69,
+            "name": "Anel de resistência",
+            "page": 154
+        },
+        {
+            "value": "50GP",
+            "roll": 70,
+            "name": "Anel de armazenar magia",
+            "page": 151
+        },
+        {
+            "value": "50GP",
+            "roll": 71,
+            "name": "Anel do aríete",
+            "page": 154
+        },
+        {
+            "value": "50GP",
+            "roll": 72,
+            "name": "Anel de visão de raio-X",
+            "page": 154
+        },
+        {
+            "value": "50GP",
+            "roll": 73,
+            "name": "Robe dos olhos",
+            "page": 206
+        },
+        {
+            "value": "50GP",
+            "roll": 74,
+            "name": "Bastão da obediência",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 75,
+            "name": "Bastão guardião de pactos +2",
+            "page": 163
+        },
+        {
+            "value": "50GP",
+            "roll": 76,
+            "name": "Corda de estrangulamento",
+            "page": 174
+        },
+        {
+            "value": "50GP",
+            "roll": 77,
+            "name": "Brunea +1",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 78,
+            "name": "Armadura de resistência (brunea)",
+            "page": 156
+        },
+        {
+            "value": "50GP",
+            "roll": 79,
+            "name": "Escudo +2",
+            "page": 178
+        },
+        {
+            "value": "50GP",
+            "roll": 80,
+            "name": "Escudo de atração de projeteis",
+            "page": 178
+        },
+        {
+            "value": "50GP",
+            "roll": 81,
+            "name": "Cajado de enfeitiçar",
+            "page": 168
+        },
+        {
+            "value": "50GP",
+            "roll": 82,
+            "name": "Cajado de cura",
+            "page": 168
+        },
+        {
+            "value": "50GP",
+            "roll": 83,
+            "name": "Cajado de enxame de insetos",
+            "page": 169
+        },
+        {
+            "value": "50GP",
+            "roll": 84,
+            "name": "Cajado das florestas",
+            "page": 166
+        },
+        {
+            "value": "50GP",
+            "roll": 85,
+            "name": "Cajado do definhamento",
+            "page": 168
+        },
+        {
+            "value": "50GP",
+            "roll": 86,
+            "name": "Pedra de comandar elementais da terra",
+            "page": 195
+        },
+        {
+            "value": "50GP",
+            "roll": 87,
+            "name": "Lâmina do sol",
+            "page": 188
+        },
+        {
+            "value": "50GP",
+            "roll": 88,
+            "name": "Espada do furto de vidas",
+            "page": 180
+        },
+        {
+            "value": "50GP",
+            "roll": 89,
+            "name": "Espada do sangramento",
+            "page": 180
+        },
+        {
+            "value": "50GP",
+            "roll": 90,
+            "name": "Bastão do tentáculo",
+            "page": 163
+        },
+        {
+            "value": "50GP",
+            "roll": 91,
+            "name": "Arma viciosa",
+            "page": 155
+        },
+        {
+            "value": "50GP",
+            "roll": 92,
+            "name": "Varinha de obrigação",
+            "page": 213
+        },
+        {
+            "value": "50GP",
+            "roll": 93,
+            "name": "Varinha de detecção de inimigos",
+            "page": 210
+        },
+        {
+            "value": "50GP",
+            "roll": 94,
+            "name": "Varinha de medo",
+            "page": 212
+        },
+        {
+            "value": "50GP",
+            "roll": 95,
+            "name": "Varinha de bolas de fogo",
+            "page": 210
+        },
+        {
+            "value": "50GP",
+            "roll": 96,
+            "name": "Varinhas de relâmpagos",
+            "page": 213
+        },
+        {
+            "value": "50GP",
+            "roll": 97,
+            "name": "Varinha de paralisia",
+            "page": 213
+        },
+        {
+            "value": "50GP",
+            "roll": 98,
+            "name": "Varinha do arcano de guerra +2",
+            "page": 214
+        },
+        {
+            "value": "50GP",
+            "roll": 99,
+            "name": "Varinha das maravilhas",
+            "page": 210
+        },
+        {
+            "value": "50GP",
+            "roll": 100,
+            "name": "Asas voadoras",
+            "page": 157
+        }
+    ],
+    "TableH": [{
+            "value": "50GP",
+            "roll": 10,
+            "name": "Arma +3",
+            "page": 155
+        },
+        {
+            "value": "50GP",
+            "roll": 12,
+            "name": "Amuleto dos planos",
+            "page": 150
+        },
+        {
+            "value": "50GP",
+            "roll": 14,
+            "name": "Tapete voador",
+            "page": 208
+        },
+        {
+            "value": "50GP",
+            "roll": 16,
+            "name": "Bola de cristal (versão muito rara)",
+            "page": 163
+        },
+        {
+            "value": "50GP",
+            "roll": 18,
+            "name": "Anel de regeneração",
+            "page": 154
+        },
+        {
+            "value": "50GP",
+            "roll": 20,
+            "name": "Anel de estrelas cadentes",
+            "page": 152
+        },
+        {
+            "value": "50GP",
+            "roll": 22,
+            "name": "Anel de telecinésia",
+            "page": 154
+        },
+        {
+            "value": "50GP",
+            "roll": 24,
+            "name": "Robe das cores cintilantes",
+            "page": 204
+        },
+        {
+            "value": "50GP",
+            "roll": 26,
+            "name": "Robe das estrelas",
+            "page": 204
+        },
+        {
+            "value": "50GP",
+            "roll": 28,
+            "name": "Bastão de absorção",
+            "page": 161
+        },
+        {
+            "value": "50GP",
+            "roll": 30,
+            "name": "Bastão de prontidão",
+            "page": 161
+        },
+        {
+            "value": "50GP",
+            "roll": 32,
+            "name": "Bastão de segurança",
+            "page": 162
+        },
+        {
+            "value": "50GP",
+            "roll": 34,
+            "name": "Bastão guardião de pactos +3",
+            "page": 163
+        },
+        {
+            "value": "50GP",
+            "roll": 36,
+            "name": "Cimitarra da velocidade",
+            "page": 172
+        },
+        {
+            "value": "50GP",
+            "roll": 38,
+            "name": "Escudo +3",
+            "page": 178
+        },
+        {
+            "value": "50GP",
+            "roll": 40,
+            "name": "Cajado do fogo",
+            "page": 169
+        },
+        {
+            "value": "50GP",
+            "roll": 42,
+            "name": "Cajado do frio",
+            "page": 170
+        },
+        {
+            "value": "50GP",
+            "roll": 44,
+            "name": "Cajado do poder",
+            "page": 170
+        },
+        {
+            "value": "50GP",
+            "roll": 46,
+            "name": "Cajado de ataque",
+            "page": 168
+        },
+        {
+            "value": "50GP",
+            "roll": 48,
+            "name": "Cajado de trovão e relâmpago",
+            "page": 169
+        },
+        {
+            "value": "50GP",
+            "roll": 50,
+            "name": "Espada decepadora",
+            "page": 180
+        },
+        {
+            "value": "50GP",
+            "roll": 52,
+            "name": "Varinha de metamorfose",
+            "page": 212
+        },
+        {
+            "value": "50GP",
+            "roll": 54,
+            "name": "Varinha do arcano de guerra +3",
+            "page": 214
+        },
+        {
+            "value": "50GP",
+            "roll": 55,
+            "name": "Armadura de adamante (meia-armadura)",
+            "page": 155
+        },
+        {
+            "value": "50GP",
+            "roll": 56,
+            "name": "Armadura de adamante (placas)",
+            "page": 155
+        },
+        {
+            "value": "50GP",
+            "roll": 57,
+            "name": "Escudo animado",
+            "page": 178
+        },
+        {
+            "value": "50GP",
+            "roll": 58,
+            "name": "Cinturão de força do gigante do fogo",
+            "page": 172
+        },
+        {
+            "value": "50GP",
+            "roll": 59,
+            "name": "Cinturão de força do gigante do frio (ou de pedra)",
+            "page": 172
+        },
+        {
+            "value": "50GP",
+            "roll": 60,
+            "name": "Peitoral +1",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 61,
+            "name": "Armadura de resistência (peitoral)",
+            "page": 156
+        },
+        {
+            "value": "50GP",
+            "roll": 62,
+            "name": "Vela da invocação",
+            "page": 214
+        },
+        {
+            "value": "50GP",
+            "roll": 63,
+            "name": "Cota de malha +2",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 64,
+            "name": "Camisão de malha +2",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 65,
+            "name": "Manto da aranha",
+            "page": 191
+        },
+        {
+            "value": "50GP",
+            "roll": 66,
+            "name": "Espada dançarina",
+            "page": 179
+        },
+        {
+            "value": "50GP",
+            "roll": 67,
+            "name": "Armadura demoníaca",
+            "page": 156
+        },
+        {
+            "value": "50GP",
+            "roll": 68,
+            "name": "Brunea de escamas de dragão",
+            "page": 165
+        },
+        {
+            "value": "50GP",
+            "roll": 69,
+            "name": "Armadura anã",
+            "page": 155
+        },
+        {
+            "value": "50GP",
+            "roll": 70,
+            "name": "Arremessador anão",
+            "page": 156
+        },
+        {
+            "value": "50GP",
+            "roll": 71,
+            "name": "Garrafa do efreeti",
+            "page": 186
+        },
+        {
+            "value": "50GP",
+            "roll": 72,
+            "name": "Estátua de poderes incríveis (corcel de obsidiana)",
+            "page": 181
+        },
+        {
+            "value": "50GP",
+            "roll": 73,
+            "name": "Marca congelante",
+            "page": 193
+        },
+        {
+            "value": "50GP",
+            "roll": 74,
+            "name": "Elmo brilhante",
+            "page": 177
+        },
+        {
+            "value": "50GP",
+            "roll": 75,
+            "name": "Trombeta do Valhalla (bronze)",
+            "page": 209
+        },
+        {
+            "value": "50GP",
+            "roll": 76,
+            "name": "Instrumento dos bardos (harpa de Anstruth)",
+            "page": 187
+        },
+        {
+            "value": "50GP",
+            "roll": 77,
+            "name": "Pedra iônica (absorção)",
+            "page": 195
+        },
+        {
+            "value": "50GP",
+            "roll": 78,
+            "name": "Pedra iônica (agilidade)",
+            "page": 195
+        },
+        {
+            "value": "50GP",
+            "roll": 79,
+            "name": "Pedra iônica (fortitude)",
+            "page": 195
+        },
+        {
+            "value": "50GP",
+            "roll": 80,
+            "name": "Pedra iônica (intuição)",
+            "page": 195
+        },
+        {
+            "value": "50GP",
+            "roll": 81,
+            "name": "Pedra iônica (intelecto)",
+            "page": 195
+        },
+        {
+            "value": "50GP",
+            "roll": 82,
+            "name": "Pedra iônica (liderança)",
+            "page": 195
+        },
+        {
+            "value": "50GP",
+            "roll": 83,
+            "name": "Pedra iônica (força)",
+            "page": 195
+        },
+        {
+            "value": "50GP",
+            "roll": 84,
+            "name": "Armadura de couro +2",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 85,
+            "name": "Manual da saúde corporal",
+            "page": 192
+        },
+        {
+            "value": "50GP",
+            "roll": 86,
+            "name": "Manual do bom exercício",
+            "page": 192
+        },
+        {
+            "value": "50GP",
+            "roll": 87,
+            "name": "Manual dos golens",
+            "page": 192
+        },
+        {
+            "value": "50GP",
+            "roll": 88,
+            "name": "Manual da rapidez de movimentos",
+            "page": 192
+        },
+        {
+            "value": "50GP",
+            "roll": 89,
+            "name": "Espelho do aprisionamento",
+            "page": 181
+        },
+        {
+            "value": "50GP",
+            "roll": 90,
+            "name": "Ladra das nove vidas",
+            "page": 188
+        },
+        {
+            "value": "50GP",
+            "roll": 91,
+            "name": "Arco do juramento",
+            "page": 154
+        },
+        {
+            "value": "50GP",
+            "roll": 92,
+            "name": "Brunea +2",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 93,
+            "name": "Escudo de proteção contra magia",
+            "page": 178
+        },
+        {
+            "value": "50GP",
+            "roll": 94,
+            "name": "Cota de talas +1",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 95,
+            "name": "Armadura de resistência (cota de talas)",
+            "page": 156
+        },
+        {
+            "value": "50GP",
+            "roll": 96,
+            "name": "Armadura de couro batido +1",
+            "page": 0
+        },
+        {
+            "value": "50GP",
+            "roll": 97,
+            "name": "Armadura de resistência (couro batido)",
+            "page": 156
+        },
+        {
+            "value": "50GP",
+            "roll": 98,
+            "name": "Tomo dos grandes pensamentos",
+            "page": 209
+        },
+        {
+            "value": "50GP",
+            "roll": 99,
+            "name": "Tomo de liderança e influência",
+            "page": 209
+        },
+        {
+            "value": "50GP",
+            "roll": 100,
+            "name": "Tomo da compreensão",
+            "page": 208
+        }
+    ],
+    "TableI": [{
+            "value": "50GP",
+            "roll": 5,
+            "name": "Defensora",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 10,
+            "name": "Martelo dos trovões",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 15,
+            "name": "Lâmina da sorte",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 20,
+            "name": "Espada de retaliação",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 23,
+            "name": "Vingadora sagrada",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 26,
+            "name": "Anel de invocação de djinni",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 29,
+            "name": "Anel de invisibilidade",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 32,
+            "name": "Anel de refletir magias",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 38,
+            "name": "Bastão do grande poder",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 41,
+            "name": "Espada vorpal",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 43,
+            "name": "Cinturão de força do gigante das nuvens",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 45,
+            "name": "Peitoral +2",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 47,
+            "name": "Cota de malha +3",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 49,
+            "name": "Camisão de malha +3",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 51,
+            "name": "Manto de invisibilidade",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 53,
+            "name": "Bola de cristal (versão lendária)",
+            "page": 163
+        },
+        {
+            "value": "50GP",
+            "roll": 55,
+            "name": "Meia-armadura +1",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 57,
+            "name": "Frasco de ferro",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 59,
+            "name": "Armadura de couro +3",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 61,
+            "name": "Armadura de placas +1",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 63,
+            "name": "Robe do arquimago",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 65,
+            "name": "Bastão de ressurreição",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 67,
+            "name": "Brunea +1",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 69,
+            "name": "Escaravelho da proteção",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 71,
+            "name": "Cota de talas +2",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 73,
+            "name": "Armadura de couro batido +2",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 75,
+            "name": "Poço dos muitos mundos",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 76,
+            "name": "Armadura mágica",
+            "types": ["Meia-armadura +2", "Meia-armadura +2", "Armadura de placas +2", "Armadura de placas +2", "Armadura de couro batido +3", "Armadura de couro batido +3", "Peitoral +3", "Peitoral +3", "Cota de talas +3", "Cota de talas +3", "Meia-armadura +3", "Armadura de placas +3"],
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 77,
+            "name": "Dispositivo de Kwalish",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 78,
+            "name": "Armadura de invulnerabilidade",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 79,
+            "name": "Cinturão de força do gigante da tempestade",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 80,
+            "name": "Cubo do portal",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 81,
+            "name": "Baralho das surpresas",
+            "page": 157
+        },
+        {
+            "value": "50GP",
+            "roll": 82,
+            "name": "Malha do efreeti",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 83,
+            "name": "Armadura de resistência (meia-armadura)",
+            "page": 156
+        },
+        {
+            "value": "50GP",
+            "roll": 84,
+            "name": "Trombeta do Valhalla (ferro)",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 85,
+            "name": "Instrumento dos bardos (harpa de Ollamh)",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 86,
+            "name": "Pedra iônica (absorção maior)",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 87,
+            "name": "Pedra iônica (maestria)",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 88,
+            "name": "Pedra iônica (regeneração)",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 89,
+            "name": "Armadura de placas da forma etérea",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 90,
+            "name": "Armadura de placas da resistência",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 91,
+            "name": "Anel de comandar elementais do ar",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 92,
+            "name": "Anel de comandar elementais da terra",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 93,
+            "name": "Anel de comandar elementais do fogo",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 94,
+            "name": "Anel dos três desejos",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 95,
+            "name": "Anel de comandar elementais da água",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 96,
+            "name": "Esfera da aniquilação",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 97,
+            "name": "Talismã da bondade pura",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 98,
+            "name": "Talismã da esfera",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 99,
+            "name": "Talismã do mal absoluto",
+            "page": 666
+        },
+        {
+            "value": "50GP",
+            "roll": 100,
+            "name": "Tomo da língua quieta",
+            "page": 666
+        }
+    ]
+}

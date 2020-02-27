@@ -1,0 +1,61 @@
+[{
+        "roll": 20,
+        "piece1": {
+            "quant": 4,
+            "sides": 6,
+            "type": "Peças de Prata",
+            "multiply": 100
+        },
+        "piece2": {
+            "quant": 1,
+            "sides": 6,
+            "type": "Peças de Ouro",
+            "multiply": 100
+        }
+    },
+    {
+        "roll": 35,
+        "piece1": {
+            "quant": 1,
+            "sides": 6,
+            "type": "Peças de Electrum",
+            "multiply": 100
+        },
+        "piece2": {
+            "quant": 1,
+            "sides": 6,
+            "type": "Peças de Ouro",
+            "multiply": 100
+        }
+    },
+    {
+        "roll": 75,
+        "piece1": {
+            "quant": 2,
+            "sides": 6,
+            "type": "Peças de Ouro",
+            "multiply": 100
+        },
+        "piece2": {
+            "quant": 1,
+            "sides": 6,
+            "type": "Peças de Platina",
+            "multiply": 10
+        }
+    },
+    {
+        "roll": 100,
+        "piece1": {
+            "quant": 2,
+            "sides": 6,
+            "type": "Peças de Ouro",
+            "multiply": 100
+        },
+        "piece2": {
+            "quant": 2,
+            "sides": 6,
+            "type": "Peças de Platina",
+            "multiply": 10
+        }
+    }
+]
