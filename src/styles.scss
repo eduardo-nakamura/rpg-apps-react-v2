@@ -5,7 +5,7 @@
 .bg-grunge-black {
     background-image: url('../src/assets/blackbg.jpg');
     background-size: 100%;
-    background-position: center center;
+    background-position: top;
     background-color: black;
 }
 
@@ -13,6 +13,7 @@
     background-image: url('../src/assets/grunge-metal-red-grunge-texture_1048-4051.jpg');
     background-size: 100%;
     background-color: red;
+    background-position: top;
 }
 
 .bg-table {

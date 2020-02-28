@@ -3,129 +3,34 @@
         <h2>Dice Roller</h2>
     </div>
     <div class="row">
-        <div class="col-3 col-lg text-center" (click)="showD4 = !showD4;">
+        <div class="col-3 col-sm text-center" (click)="addDice(4)">
             <img src="assets/d4.svg" title="D4" alt="D4">
             <span class="badge badge-secondary">D4</span>
         </div>
-        <div class="col-3 col-lg text-center" (click)="showD6 = !showD6">
+        <div class="col-3 col-sm text-center" (click)="addDice(6)">
             <img src="assets/d6.svg" title="D6" alt="D6">
             <span class="badge badge-secondary">D6</span>
         </div>
-        <div class="col-3 col-lg text-center" (click)="showD8 = !showD8">
+        <div class="col-3 col-sm text-center" (click)="addDice(8)">
             <img src="assets/d8.svg" title="D8" alt="D8">
             <span class="badge badge-secondary">D8</span>
         </div>
-        <div class="col-3 col-lg text-center" (click)="showD10 = !showD10">
+        <div class="col-3 col-sm text-center" (click)="addDice(10)">
             <img src="assets/d10.svg" title="D10" alt="D10">
             <span class="badge badge-secondary">D10</span>
         </div>
-        <div class="col-3 col-lg text-center" (click)="showD12 = !showD12">
+        <div class="col-3 col-sm text-center" (click)="addDice(12)">
             <img src="assets/d12.svg" title="D12" alt="D12">
             <span class="badge badge-secondary">D12</span>
         </div>
-        <div class="col-3 col-lg text-center" (click)="showD20 = !showD20">
+        <div class="col-3 col-sm text-center" (click)="addDice(20)">
             <img src="assets/d20.svg" title="D20" alt="D20">
             <span class="badge badge-secondary">D20</span>
         </div>
-        <div class="col-3 col-lg text-center" (click)="showD100 = !showD100">
+        <div class="col-3 col-sm text-center" (click)="addDice(100)">
             <img src="assets/d100.svg" title="Custom" alt="Custom">
             <span class="badge badge-secondary">D100</span>
         </div>
-        <div class="col-3 col-lg text-center" (click)="showDCustom = !showDCustom">
-            <img src="assets/dcustom.svg" title="Custom" alt="Custom">
-            <span class="badge badge-secondary">PERSONALIZADO</span>
-        </div>
-    </div>
-    <div class="p-2">
-        <form [formGroup]="dices">
-            <div class="row">
-                <div class="col-6 col-md-4" *ngIf="showD4">
-                    <div class="input-group input-group-sm mb-3" formGroupName="d4">
-                        <input type="text" formControlName="quant" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">D4</span>
-                        </div>
-                        <input type="text" formControlName="bonus" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4" *ngIf="showD6">
-                    <div class="input-group input-group-sm mb-3" formGroupName="d6">
-                        <input type="text" formControlName="quant" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">D6</span>
-                        </div>
-                        <input type="text" formControlName="bonus" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4" *ngIf="showD8">
-                    <div class="input-group input-group-sm mb-3" formGroupName="d8">
-                        <input type="text" formControlName="quant" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">D8</span>
-                        </div>
-                        <input type="text" formControlName="bonus" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4" *ngIf="showD10">
-                    <div class="input-group input-group-sm mb-3" formGroupName="d10">
-                        <input type="text" formControlName="quant" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">D10</span>
-                        </div>
-                        <input type="text" formControlName="bonus" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4" *ngIf="showD12">
-                    <div class="input-group input-group-sm mb-3" formGroupName="d12">
-                        <input type="text" formControlName="quant" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">D12</span>
-                        </div>
-                        <input type="text" formControlName="bonus" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4" *ngIf="showD20">
-                    <div class="input-group input-group-sm mb-3" formGroupName="d20">
-                        <input type="text" formControlName="quant" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">D20</span>
-                        </div>
-                        <input type="text" formControlName="bonus" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="row">
-                <div class="col" *ngIf="showD100">
-                    <div class="input-group input-group-sm mb-3" formGroupName="d100">
-                        <input type="text" formControlName="quant" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">D100</span>
-                        </div>
-                        <input type="text" formControlName="bonus" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                </div>
-
-                <div class="col" *ngIf="showDCustom">
-                    <div class="input-group input-group-sm mb-3" formGroupName="dCustom">
-                        <input type="text" formControlName="quant" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">D</span>
-                        </div>
-                        <input style="background-color: #E9ECEF;" type="number" formControlName="sides" class="form-control " aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-
-                        <input type="text" formControlName="bonus" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                </div>
-            </div>
-        </form>
-
     </div>
     <div class="row">
         <button class="btn col mr-2 btn-danger" (click)="rollDiceResults()">
@@ -135,25 +40,39 @@
             Limpar Histórico <i class="fas fa-backspace"></i>
         </button>
     </div>
-    <div class="row bg-header mt-2 pl-2 pt-2">
-        <h2>Resultados</h2>
-    </div>
-    <div class="row">
-        <ul class="text-white">
-            <li *ngFor="let roll of diceRoll">
-                {{roll.result.length}}d{{roll.side}} {{roll.bonus > 0 ? '+' : ''}} {{roll.bonus > 0 ? roll.bonus : ''}} | {{roll.result.join(' + ')}} {{roll.bonus > 0 ? '+' : ''}} {{roll.bonus > 0 ? roll.bonus : ''}} = <span class="bg-success pl-2 pr-2 text-white">{{roll.sum}}</span>
-            </li>
-        </ul>
+
+    <div class="bg-grunge-black text-light">
+        <input type="number" min="0" [(ngModel)]="addThis.quantity">
+        <label>dados de</label>
+        <input type="number" min="0" [(ngModel)]="addThis.side">
+        <p>lados +</p>
+        <input type="number" min="0" [(ngModel)]="addThis.bonus">
+        <p>bonus</p>
+        <button class="btn btn-danger" (click)="addDice(addThis.side,addThis.quantity,addThis.bonus)"> + </button>
     </div>
 
-    <div class="row bg-header mt-2 pl-2 pt-2">
-        <h2>Histórico</h2>
-    </div>
-    <div class="row">
-        <ul class="text-white">
-            <li *ngFor="let roll of diceHist">
-                {{roll.result.length}}d{{roll.side}} {{roll.bonus > 0 ? '+' : ''}} {{roll.bonus > 0 ? roll.bonus : ''}} | {{roll.result.join(' + ')}} {{roll.bonus > 0 ? '+' : ''}} {{roll.bonus > 0 ? roll.bonus : ''}} = <span class="bg-success pl-2 pr-2 text-white">{{roll.sum}}</span>
-            </li>
-        </ul>
-    </div>
+    <!-- <div class="row mb-3">
+        <div class="col-12" *ngFor="let dices of dicesToRoll">
+            <div class="d-flex align-items-end text-light">
+                <div class="input-group mt-3 ml-3 mr-3">
+                  
+                    <input type="text" [(ngModel)]="dices.quantity" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mt-3 ml-3 mr-3">
+              
+                    <input type="text" [(ngModel)]="dices.side" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mt-3 ml-3 mr-3">
+               
+                    <input type="text" [(ngModel)]="dices.bonus" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+    </div> -->
 </div>
+<p class="text-light">
+    {{addThis | json}}
+</p>
+<p class="text-light">
+    {{dicesToRoll | json}}
+</p>
