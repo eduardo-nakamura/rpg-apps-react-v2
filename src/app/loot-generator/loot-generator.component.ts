@@ -47,7 +47,7 @@ export class LootGeneratorComponent implements OnInit {
   genLoot(lootType) {  
     this.reset()
     let rollLoot = this.rollDice(100)          
-    this.switch(lootType)  
+    this.switch(lootType)      
     setTimeout(() => {
       let filterLoot = this.lootSelected.filter(function(hero) {
         return hero.roll >= rollLoot;
@@ -70,19 +70,16 @@ export class LootGeneratorComponent implements OnInit {
             let gemOrArt:any     
             if(lootChosen[key].type == "Gemas"){
               this.apiService.gems().subscribe((data:any) => {        
-                return gemOrArt = data[lootChosen[key].table]
+                //return gemOrArt = data[lootChosen[key].table]
+                let gemOrArt = data[lootChosen[key].table]
+                this.ObjGem(lootRoll, gemOrArt, lootChosen, key);
               }); 
             } else {
               this.apiService.art().subscribe((data:any) => {        
-                return gemOrArt = data[lootChosen[key].table]
+                let gemOrArt = data[lootChosen[key].table]
+                this.ObjGem(lootRoll, gemOrArt, lootChosen, key);
               }); 
-            }
-            setTimeout(() => {              
-              let randomItem = new Array(parseInt(lootRoll)).fill(null)
-              randomItem = randomItem.map(() => (" " + gemOrArt[this.rollDice(gemOrArt.length - 1)]));             
-              this.lootShow.gemArts += randomItem
-              this.lootShow.gemArts += ` (${randomItem.length * parseInt(lootChosen[key].table)} GP Total)`
-            }, 300);            
+            }             
           }
           if(key == "magItemA" || key == "magItemB"){   
             let selectedTable:any     
@@ -91,18 +88,14 @@ export class LootGeneratorComponent implements OnInit {
             });             
 
             setTimeout(() => {        
-              let quantItems = this.rollDice(lootChosen[key].sides)
-           
-              let magItems = new Array(quantItems).fill("")
-              
+              let quantItems = this.rollDice(lootChosen[key].sides)           
+              let magItems = new Array(quantItems).fill("")              
               for(let i = 0; i < quantItems; i++){
                 let rollMagItem = this.rollDice(100)
                 let magItem = selectedTable.filter(function(hero) {
                   return hero.roll >= rollMagItem;
-                });
-                
-                magItems[i] += `• ${magItem[0].name}, LDJ pg.${magItem[0].page}`
-       
+                });                
+                magItems[i] += `• ${magItem[0].name}, LDJ pg.${magItem[0].page}`       
               }  
               this.lootShow.magItems = magItems              
             }, 300); 
@@ -112,6 +105,8 @@ export class LootGeneratorComponent implements OnInit {
     }, 300); 
      
 
+    
+
     setTimeout(() => {              
       if(this.lootShow.magItems.length == 0 && this.lootShow.gemArts == '' && this.lootShow.money == '') {
         this.lootNone = true
@@ -120,8 +115,14 @@ export class LootGeneratorComponent implements OnInit {
       }
     }, 650);  
   }
-  switch(lootType){    
-    
+
+  ObjGem(lootRoll, gemOrArt, lootChosen, key) {
+    let randomItem = new Array(parseInt(lootRoll)).fill(null)
+    randomItem = randomItem.map(() => (" " + gemOrArt[this.rollDice(gemOrArt.length - 1)]));             
+    this.lootShow.gemArts += randomItem
+    this.lootShow.gemArts += ` (${randomItem.length * parseInt(lootChosen[key].table)} GP Total)`
+  }
+  switch(lootType){        
     switch(lootType){
       case 1:
         this.apiService.getLootIndividual0to4().subscribe((data:any) => {        
@@ -163,7 +164,8 @@ export class LootGeneratorComponent implements OnInit {
           return this.lootSelected = data
         });   
       break;
-    }      
+    }   
+   
   }
   reset(){
     this.lootShow = {

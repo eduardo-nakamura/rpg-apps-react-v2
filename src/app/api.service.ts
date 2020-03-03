@@ -11,11 +11,11 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class ApiService {  
-  
+export class ApiService {    
   serve = "../assets/mock/"
   serve2 = "../rpg/assets/mock/"
-  constructor(private httpClient: HttpClient) { }  
+  constructor(private httpClient: HttpClient) { } 
+
   public getFahen(){      
     return this.httpClient.get(`${this.serve}fahen.json`);
   }
