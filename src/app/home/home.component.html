@@ -1,7 +1,7 @@
 <div class="container">
-    <button (click)="teste()">a</button>
+
     <div class="row">
-        <div class="col-6 col-md-4 p-2 m-0" *ngFor="let card of cards">
+        <div class="col-6 col-md p-2 m-0" *ngFor="let card of cards">
             <a [routerLink]="card.path">
                 <img class="w-100" [src]="card.imagem" [alt]="card.titulo">
                 <h6 class="text-white">{{card.titulo}}</h6>
