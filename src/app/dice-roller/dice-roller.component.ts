@@ -1,35 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
-import { MatTableDataSource } from '@angular/material/table';
+// import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 
-export interface diceTable {
-  quantity: number;
-  side: number;
-  bonus: number;
-
-}
-
-const ELEMENT_DATA: diceTable[] = [
-  // {side: 1, quantity: 1, bonus: 1},
-
-];
 export class diceObj {  
   quantity: number;
   side: number;
   bonus: number;
 }
-
+export class diceResult {  
+  quantity: number;
+  side: number;
+  bonus: number;
+  results: any;
+  sum:number;
+}
 @Component({
   selector: 'app-dice-roller',
   templateUrl: './dice-roller.component.html',
   styleUrls: ['./dice-roller.component.css']
 })
-export class DiceRollerComponent implements OnInit {  
-  displayedColumns: string[] = ['quantity', 'side', 'bonus'];
-  dataSource = new MatTableDataSource<diceTable>(ELEMENT_DATA);
-  dicesToRoll = [
-   
-  ]
+export class DiceRollerComponent implements OnInit {    
+  dicesToRoll = []
+  diceResult =[]
+  diceHist =[]
   addThis = new diceObj()
   constructor() { 
      
@@ -37,14 +29,34 @@ export class DiceRollerComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  rollDiceResults(){       
-
+  rollDiceResults(){   
+    
+    if(this.dicesToRoll.length > 0)   {
+      this.diceResult = [];
+      Object.keys(this.dicesToRoll).forEach(key => { 
+        let diceRolled = new diceResult();
+        diceRolled.quantity = this.dicesToRoll[key].quantity;
+        diceRolled.side = this.dicesToRoll[key].side;
+        diceRolled.bonus = this.dicesToRoll[key].bonus;      
+        let rollDiceStats = new Array(parseInt(this.dicesToRoll[key].quantity)).fill(null)
+        rollDiceStats = rollDiceStats.map(() => (this.rollDice(this.dicesToRoll[key].side,1)));   
+        diceRolled.results = rollDiceStats
+        console.log(diceRolled.results)
+        diceRolled.sum = rollDiceStats.reduce((total, num) => total + num,0) + diceRolled.bonus
+        this.diceResult.push(diceRolled)
+        this.diceHist.unshift(diceRolled)
+        
+       })
+       this.dicesToRoll = []
+    }
+    
   }
   resetForm(){
- 
+   
   }
   resetHistory(){   
-  
+    this.diceResult = []
+    this.diceHist = []
   }
   rollDice(max, min) {
     min = Math.ceil(min);
@@ -59,14 +71,12 @@ export class DiceRollerComponent implements OnInit {
     // console.log(newDie.quantity != null && newDie.side != null)
     if(newDie.quantity > 0 && isNaN(newDie.side) != true){
       this.dicesToRoll.push(newDie);
-      ELEMENT_DATA.push(newDie)
+   
     }
     let remode = this.removeDuplicates(this.dicesToRoll, 'side')     
     this.dicesToRoll = remode 
     this.addThis = new diceObj()
-    
-    this.dataSource = new MatTableDataSource<diceTable>(ELEMENT_DATA);
-    console.log(this.dataSource.data)
+   
   }
   removeDuplicates(array, key) {
     let lookup = new Set();
