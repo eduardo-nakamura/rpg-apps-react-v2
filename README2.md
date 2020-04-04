@@ -1,7 +1,7 @@
 # rpg
 
 
-rpg
+ng build --prod --output-path docs --base-href /rpg/
 
 Hosting Websites Directly from Dropbox
 Dropbox is an easy way to create a quick website without the need for a server. You are limited to client side scripts and HTML since Dropbox cannot run any server side stuff.
