@@ -104,15 +104,6 @@
     </div>
 </div> -->
 
-<div class="row">
-
-    <button class="btn col col-sm-3 m-2 btn-danger" (click)="rollDiceResults();tabGroup.selectedIndex=0">
-        Rolar Dados <i class="fas fa-dice"></i>
-    </button>
-    <button class="btn col col-sm-3 m-2 btn-danger" (click)="resetHistory()">
-        Limpar Histórico <i class="fas fa-backspace"></i>
-    </button>
-</div>
 
 
 <div class="form-row text-light p-1" *ngFor="let item of dicesToRoll">
@@ -134,14 +125,24 @@
 
   </div>
 
+  <div class="row">
+
+    <button class="btn col col-sm-3 m-2 btn-danger" (click)="rollDiceResults();tabGroup.selectedIndex=0">
+        Rolar Dados <i class="fas fa-dice"></i>
+    </button>
+    <button class="btn col col-sm-3 m-2 btn-danger" (click)="resetHistory()">
+        Limpar Histórico <i class="fas fa-backspace"></i>
+    </button>
+</div>
+
+
   <mat-tab-group class="bg-warning" #tabGroup>
     <mat-tab label="Resultado"> 
         <div class="row w-100 p-2">
             <div class="p-2 m-1 bg-danger " *ngFor="let item of diceResult; let i = index" title="{{item.results.join(' + ')}} + {{item.bonus}}">
                 {{i+1}}) {{item.quantity}}d{{item.side}}{{item.bonus != 0 ? ' + ' + item.bonus : ''}}: {{item.results.join(" + ")}} + {{item.bonus}} = {{item.sum}}
             </div>
-        </div>
-        
+        </div>       
     
     </mat-tab>
     <mat-tab label="Histórico"> 
