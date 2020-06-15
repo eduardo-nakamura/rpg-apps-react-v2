@@ -23,6 +23,7 @@ export class DiceRollerComponent implements OnInit {
   diceResult =[]
   diceHist =[]
   addThis = new diceObj()
+  customHide = false;
   constructor() { 
      
   }

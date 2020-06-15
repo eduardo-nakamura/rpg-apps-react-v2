@@ -1,10 +1,10 @@
-<div class="container-fluid">
+<div class="container">
     <div class="row bg-header p-2 bg-warning">
         <h2>Dice Roller</h2>
     </div>
 
     <div class="row p-2 mt-3 ">
-        <div class="col-12 col-sm-8 text-center ">
+        <div class="col-12 col-sm text-center ">
             <div class="row">
                 <div class="col-4 col-md " (click)="addDice(4)">
                     <img src="assets/d4.svg" title="D4" alt="D4">
@@ -29,19 +29,23 @@
                     <span class="badge badge-secondary">D20</span>
                 </div>
                 <div class="col-4 col-md " (click)="addDice(100)">
-                    <img src="assets/d100.svg" title="Cusstom" alt="Custom">
+                    <img src="assets/d100.svg" title="D100" alt="D100">
                     <span class="badge badge-secondary">D100</span>
                 </div>
+                <div class="col-4 col-md " (click)="customHide = !customHide">
+                    <img src="assets/dcustom.svg" title="Custom" alt="Custom">
+                    <span class="badge badge-secondary">Custom Dice</span>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4 col-12 ">
+        </div>        
+        <div class=" col-12 col-sm-4 " *ngIf="customHide">
            <div class="row bg-warning pt-3 pb-3">
                <div class="col-12 text-light">
-                <label class="col-4"> Dados: </label>
+                <label class="col-4"> Quantidade: </label>
                 <input class="col-8" type="number" min="0" [(ngModel)]="addThis.quantity">                
                </div>
                <div class="col-12 text-light">
-                <label class="col-4"> Lados: </label>
+                <label class="col-4"> Faces: </label>
                 <input class="col-8" type="number" min="0" [(ngModel)]="addThis.side">                
                </div>
                <div class="col-12 text-light">                
@@ -106,23 +110,24 @@
 
 
 
-<div class="form-row text-light p-1" *ngFor="let item of dicesToRoll">
-  
-    <div class="row">
-        <div class="col-12 col-md">
-            <label class="w-50" for="inputEmail4">Dados: </label>
+<div class="w-100 text-light p-2" >  
+    <div class="row" *ngFor="let item of dicesToRoll; index as i">
+        <div class="col-1 ">
+            <label class="bg-warning p-2 text-dark">{{i+1}}</label>
+        </div>
+        <div class="col ">
+            <label class="w-50" for="inputEmail4">Quantidade: </label>
             <input class="w-50" type="number" min="0" [(ngModel)]="item.quantity">
         </div>
-        <div class="col-12 col-md">
-            <label class="w-50" for="inputEmail4">Lados: </label>
+        <div class="col">
+            <label class="w-50" for="inputEmail4">Faces: </label>
           <input class="w-50" type="number" min="0" [(ngModel)]="item.side">
         </div>
-        <div class="col-12 col-md">
+        <div class="col">
             <label class="w-50" for="inputEmail4">Bonus: </label>
           <input class="w-50" type="number" min="0" [(ngModel)]="item.bonus">
         </div>
     </div>
-
   </div>
 
   <div class="row">
