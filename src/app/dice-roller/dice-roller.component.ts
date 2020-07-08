@@ -8,10 +8,13 @@ export interface diceTable {
   bonus: number;
 
 }
-
+export class diceResult {
+  result: any;
+  bonus: any;
+  sum: number;
+}
 const ELEMENT_DATA: diceTable[] = [
   // {side: 1, quantity: 1, bonus: 1},
-
 ];
 export class diceObj {  
   quantity: number;
@@ -25,11 +28,12 @@ export class diceObj {
   styleUrls: ['./dice-roller.component.css']
 })
 export class DiceRollerComponent implements OnInit {  
+  diceHistoric=[];
+  diceLast=[];
+  
   displayedColumns: string[] = ['quantity', 'side', 'bonus'];
   dataSource = new MatTableDataSource<diceTable>(ELEMENT_DATA);
-  dicesToRoll = [
-   
-  ]
+  dicesToRoll = []
   addThis = new diceObj()
   constructor() { 
      
@@ -38,10 +42,26 @@ export class DiceRollerComponent implements OnInit {
 
   }
   rollDiceResults(){       
-
+    
+    if(this.dicesToRoll.length > 0){
+      this.diceLast = []
+      Object.keys(this.dicesToRoll).forEach(key => {    
+        let thisDice = new diceResult()   
+        let rollDice = new Array(parseInt(this.dicesToRoll[key].quantity)).fill(null);
+        rollDice = rollDice.map(() => (this.rollDice(this.dicesToRoll[key].side,1)));  
+        thisDice.result = rollDice
+        thisDice.bonus = this.dicesToRoll[key].bonus    
+        thisDice.sum =  thisDice.result.reduce((total, num) => total + num,0) + thisDice.bonus
+        this.diceHistoric.push(thisDice)
+        this.diceLast.push(thisDice)
+      })
+      this.resetForm()
+    }
+    
   }
   resetForm(){
- 
+    this.dataSource.data = [];
+    this.dicesToRoll = []
   }
   resetHistory(){   
   
@@ -56,17 +76,12 @@ export class DiceRollerComponent implements OnInit {
     newDie.quantity = Number(qty);
     newDie.side = Number(diceSetValue);
     newDie.bonus = Number(bonus);  
-    // console.log(newDie.quantity != null && newDie.side != null)
     if(newDie.quantity > 0 && isNaN(newDie.side) != true){
       this.dicesToRoll.push(newDie);
-      ELEMENT_DATA.push(newDie)
+      // this.dataSource.data.push(newDie)
     }
-    let remode = this.removeDuplicates(this.dicesToRoll, 'side')     
-    this.dicesToRoll = remode 
-    this.addThis = new diceObj()
-    
-    this.dataSource = new MatTableDataSource<diceTable>(ELEMENT_DATA);
-    console.log(this.dataSource.data)
+    this.addThis = new diceObj()      
+    this.dataSource = new MatTableDataSource<diceTable>(this.dicesToRoll);  
   }
   removeDuplicates(array, key) {
     let lookup = new Set();
